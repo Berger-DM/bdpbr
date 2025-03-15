@@ -1,0 +1,149 @@
+<nav class="sidebar" id="sidebar">
+  <h2>Navigation</h2>
+  <ul id="nav-list">
+    <li><a href="/index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="/pages/introducao.html" class="nav-main">Introdução</a>
+      <ul class="subnav" id="introducao-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/criacao-de-personagens.html" class="nav-main"
+        >Criação de Personagens</a
+      >
+      <ul class="subnav" id="criacao-de-personagens-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/tarefas-complexas.html" class="nav-main"
+        >Tarefas Complexas</a
+      >
+      <ul class="subnav" id="tarefas-complexas-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/conflito-social.html" class="nav-main">Conflito Social</a>
+      <ul class="subnav" id="conflito-social-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/combate.html" class="nav-main">Combate</a>
+      <ul class="subnav" id="combate-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/carreiras-e-habilidades.html" class="nav-main"
+        >Carreiras &amp; Habilidades</a
+      >
+      <ul class="subnav" id="carreiras-e-habilidades-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/melhorando-seu-personagem.html" class="nav-main"
+        >Melhorando Seu Personagem</a
+      >
+      <ul class="subnav" id="melhorando-seu-personagem-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/armas-armaduras-e-equipamento.html" class="nav-main"
+        >Armas, Armaduras &amp; Equipamento</a
+      >
+      <ul class="subnav" id="armas-armaduras-e-equipamento-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/magia.html" class="nav-main">Magia</a>
+      <ul class="subnav" id="magia-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/narrando-aventuras.html" class="nav-main"
+        >Narrando Aventuras</a
+      >
+      <ul class="subnav" id="narrando-aventuras-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/amigos-inimigos-e-monstros.html" class="nav-main"
+        >Amigos, Inimigos &amp; Monstros</a
+      >
+      <ul class="subnav" id="amigos-inimigos-e-monstros-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/ferramentas-e-tabelas.html" class="nav-main"
+        >Ferramentas &amp; Tabelas</a
+      >
+      <ul class="subnav" id="ferramentas-e-tabelas-subnav"></ul>
+    </li>
+    <li class="dropdown">
+      <a href="/pages/creditos.html" class="nav-main">Agradecimentos</a>
+      <ul class="subnav" id="creditos-subnav"></ul>
+    </li>
+    <!-- Add more main pages here -->
+  </ul>
+</nav>
+<script>
+  document.addEventListener("DOMContentLoaded", async function () {
+    const pages = [
+      { file: "regras.html", subnavId: "regras-subnav" },
+      { file: "magia.html", subnavId: "magia-subnav" },
+      {
+        file: "amigos-inimigos-e-monstros.html",
+        subnavId: "amigos-inimigos-e-monstros-subnav",
+      },
+      {
+        file: "armas-armaduras-e-equipamento.html",
+        subnavId: "armas-armaduras-e-equipamento-subnav",
+      },
+      {
+        file: "carreiras-e-habilidades.html",
+        subnavId: "carreiras-e-habilidades-subnav",
+      },
+      { file: "combate.html", subnavId: "combate-subnav" },
+      { file: "conflito-social.html", subnavId: "conflito-social-subnav" },
+      { file: "creditos.html", subnavId: "creditos-subnav" },
+      {
+        file: "criacao-de-personagens.html",
+        subnavId: "criacao-de-personagens-subnav",
+      },
+      {
+        file: "ferramentas-e-tabelas.html",
+        subnavId: "ferramentas-e-tabelas-subnav",
+      },
+      { file: "introducao.html", subnavId: "introducao-subnav" },
+      {
+        file: "melhorando-seu-personagem.html",
+        subnavId: "melhorando-seu-personagem-subnav",
+      },
+      {
+        file: "narrando-aventuras.html",
+        subnavId: "narrando-aventuras-subnav",
+      },
+      { file: "tarefas-complexas.html", subnavId: "tarefas-complexas-subnav" },
+    ];
+
+    for (const { file, subnavId } of pages) {
+      const response = await fetch(`/pages/${file}`);
+      if (!response.ok) continue;
+
+      const text = await response.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(text, "text/html");
+
+      const subnav = document.getElementById(subnavId);
+      let headerIndex = 0;
+
+      // Combine <h2> and <h1> tags (excluding the first <h1>)
+      const headers = [...doc.querySelectorAll("h1, h2")].filter(
+        (header, index) => {
+          return header.tagName !== "H1" || index !== 0;
+        }
+      );
+
+      headers.forEach((header) => {
+        const id = header.id || `header-${headerIndex++}`;
+        header.id = id; // Ensure the header has an ID
+
+        const link = document.createElement("li");
+        link.innerHTML = `<a href="/pages/${file}#${id}">${header.textContent}</a>`;
+        subnav.appendChild(link);
+      });
+    }
+  });
+
+  function toggleSubnav(subnavId) {
+    const subnav = document.getElementById(subnavId);
+    subnav.classList.toggle("expanded");
+  }
+</script>
