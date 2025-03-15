@@ -1,0 +1,132 @@
+# Criação de Personagens
+
+<!-- imagem -->
+
+## Nome, Carreiras e Antecedentes
+
+Primeiro, os jogadores escolhem o nome, pronomes, aparência e outros detalhes do personagem. Em seguida, eles escolhem até 4 carreiras. A carreira de um personagem informa seus conhecimentos e habilidades potenciais. Veja [Carreiras](carreiras-e-habilidades).
+
+<!-- imagem -->
+
+## Atributos
+
+Os Personagens dos Jogadores (PJs) possuem apenas três atributos: Força (FOR), Destreza (DEX) e Vontade (VON). Ao criar um personagem, os jogadores rolam 3d6 para cada atributo, na ordem. Depois, podem trocar dois dos valores entre si.
+
+Um valor de 6 ou menos indica fraqueza nesse atributo, enquanto um valor de 15 ou mais indica força. Isso pode influenciar a narrativa da aventura, mas não afeta o combate diretamente. Os seguintes descritores podem ser usados para personagens com valores extremos:
+
+| Atributo | 6 ou menos     | 15 ou mais |
+| -------- | -------------- | ---------- |
+| FOR      | Frágil         | Robusto    |
+| DEX      | Desajeitado    | Ágil       |
+| VON      | Indisciplinado | Resoluto   |
+
+<!-- imagem -->
+
+<div class="purple-section purple-box-title">
+
+### Regra Opcional: Sorte
+
+Sorte é um atributo opcional. Um personagem começa com 10 pontos de Sorte. Sempre que normalmente se rolaria um Dado do Destino (d6) para determinar um resultado ou situação, o jogador pode rolar 1d20.
+
+<!-- - ■ Se o resultado for menor que a Sorte, a situação favorece o personagem. Exemplo: há um monte de feno sob a janela por onde ele pretende pular. Isso consome 1 ponto de Sorte.
+- ■ Se o resultado for igual à Sorte, a situação é favorável e o personagem ganha 1 ponto de Sorte.
+- ■ Se o resultado for maior que a Sorte, a situação é desfavorável. -->
+
+<ul class="custom-bullets">
+  <li>Se o resultado for menor que a Sorte, a situação favorece o personagem. Exemplo: há um monte de feno sob a janela por onde ele pretende pular. Isso consome 1 ponto de Sorte.</li>
+  <li>Se o resultado for igual à Sorte, a situação é favorável e o personagem ganha 1 ponto de Sorte.</li>
+  <li>Se o resultado for maior que a Sorte, a situação é desfavorável.</li>
+</ul>
+
+A Sorte também pode ser usada para melhorar Testes após a rolagem. Se um PJ falha em um Teste de FOR com um resultado de 12 e precisaria de 8 ou menos, ele pode gastar 4 pontos de Sorte para reduzir o resultado e ter sucesso. A Sorte se esgota ao longo da aventura, tornando seu uso uma escolha estratégica.
+
+### Regra Opcional: Idade e Experiência
+
+Os jogadores podem escolher ou rolar a idade inicial de seus personagens, o que afeta suas carreiras passadas e atributos.
+
+| 1d6 | Idade                     | Experiência                                                 | Efeito em FOR | Efeito em DEX | Efeito em VON |
+| --- | ------------------------- | ----------------------------------------------------------- | ------------- | ------------- | ------------- |
+| 1   | Jovem (17+1d6 anos)       | Inexperiente. 1 Habilidade de Carreira.                     | -1            | +2            | -2            |
+| 2   | Emergente (23+1d10 anos)  | Aprendendo. Menor resultado de 2d4 Habilidades de Carreira. | 0             | +1            | -1            |
+| 3-4 | Plena (33+1d10 anos)      | No auge. 1d4 Habilidades de Carreira.                       | +1            | 0             | 0             |
+| 5   | Experiente (43+1d10 anos) | Experiente. Maior resultado de 2d4 Habilidades de Carreira. | 0             | -1            | +1            |
+| 6   | Velha (53+1d10 anos)      | Veterana. 4 Habilidades de Carreira.                        | -1            | -2            | +2            |
+
+</div>
+
+<!-- imagem -->
+
+## Proteção de Acertos
+
+Role 1d6 para determinar os Proteção de Acerto (PA) iniciais do PJ. PAs refletem a capacidade de evitar dano em combate, não sua saúde ou resistência. Danos inevitáveis (de fontes invisíveis ou perigos como quedas e fogo) ignoram PA. Descansar brevemente restaura PA perdidos. (Veja [Cura](regras#descanso-e-recuperação)).
+
+<!-- imagem -->
+
+## Espécies Fantásticas
+
+Se desejarem, os jogadores podem escolher um dos seguintes traços para representar uma espécie fantástica.
+
+<!-- - ■ **Robusto** (anãos, orcs etc.) - Uma vez ao dia, quando reduzido a 0 PA, pode escolher ficar com 1 PA em vez disso.
+- ■ **Arcano** (elfos, demônios etc.) - Uma vez ao dia, pode tentar realizar um pequeno feito mágico relacionado à sua ancestralidade. O Mestre decide se algum Teste de Atributo é necessário.
+- ■ **Astuto** (halflings, goblins etc.) - Uma vez ao dia, pode rerrolar qualquer Teste de Resistência.
+- ■ **Adaptável** (humanos, meio-humanos etc.) - Uma vez ao dia, pode usar um Atributo diferente para um Teste de Resistência, em vez do pedido pelo Mestre. -->
+
+<ul class="custom-bullets">
+  <li><strong>Robusto</strong> (anões, orcs etc.) - Uma vez ao dia, quando reduzido a 0 PA, pode escolher ficar com 1 PA em vez disso.</li>
+  <li><strong>Arcano</strong> (elfos, demônios etc.) - Uma vez ao dia, pode tentar realizar um pequeno feito mágico relacionado à sua ancestralidade. O Mestre decide se algum Teste de Atributo é necessário.</li>
+  <li><strong>Astuto</strong> (halflings, goblins etc.) - Uma vez ao dia, pode rerrolar qualquer Teste de Resistência.</li>
+  <li><strong>Adaptável</strong> (humanos, meio-humanos etc.) - Uma vez ao dia, pode usar um Atributo diferente para um Teste de Resistência, em vez do pedido pelo Mestre.</li>
+</ul>
+
+<!-- imagem -->
+
+## Inventário
+
+O inventário de um personagem representa seu equipamento e sua "barra de estamina" por meio da Fadiga (veja [Privação & Fadiga](regras#fadiga-e-privação)).
+
+Cada personagem tem 10 espaços de inventário. Itens pequenos podem ser agrupados. Itens volumosos ocupam dois espaços e são pesados ou incômodos.
+
+Itens podem estar equipados (em uso ativo) ou armazenados (guardados na mochila ou no corpo do personagem).
+
+Se todas as vagas do inventário forem preenchidas, o personagem fica com 0 PA, pois não pode se defender adequadamente.
+
+<!-- imagem -->
+
+## Arma Preferida
+
+Ao criar um personagem, escolha um tipo de dano (contundente, perfurante ou cortante) para ser proficiente. Isso concede os benefícios desse tipo de dano, como ataques contundentes ignorando 1 de Armadura (veja [Habilidades de Arma](armas-armaduras-e-equipamento#habilidades-de-armas)). Além disso, escolha uma arma na qual o personagem tenha Proficiência, podendo usar seus efeitos especiais (Sangramento, Brutal, Choque). O personagem recebe essa arma no inventário.
+
+## Equipamento Inicial
+
+Novos personagens começam com:
+
+<!-- - ☒ Três dias de rações (1 espaço).
+- ☒ Um cantil (Dado de Uso d8).
+- ☒ Uma tocha.
+- ☒ Uma pederneira (peso irrelevante).
+- ☒ Um souvenir de uma das carreiras passadas.
+- ☒ 3d6 moedas.
+- ☒ Uma mochila.
+- ☒ Um boato verdadeiro e um falso sobre a região.
+- ☒ Arma e armadura, escolhendo uma das opções:
+  - Armadura leve (1 Armadura) e 2 armas rápidas (d6).
+  - Um escudo (1 Armadura) e uma arma equilibrada (d8).
+  - Armadura média (2 Armadura, Volumosa) e uma arma lenta (d10). -->
+
+  <ul class="custom-bullets">
+  <li> Três dias de rações (1 espaço).</li>
+  <li> Um cantil (Dado de Uso d8).</li>
+  <li> Uma tocha.</li>
+  <li> Uma pederneira (peso irrelevante).</li>
+  <li> Um souvenir de uma das carreiras passadas.</li>
+  <li> 3d6 moedas.</li>
+  <li> Uma mochila.</li>
+  <li> Um boato verdadeiro e um falso sobre a região.</li>
+  <li> Arma e armadura, escolhendo uma das opções:
+    <ul class="overlay-square-bullets">
+      <li>Armadura leve (1 Armadura) e 2 armas rápidas (d6).</li>
+      <li>Um escudo (1 Armadura) e uma arma equilibrada (d8).</li>
+      <li>Armadura média (2 Armadura, Volumosa) e uma arma lenta (d10).</li>
+    </ul>
+  </li>
+</ul>

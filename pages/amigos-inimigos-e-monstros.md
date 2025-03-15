@@ -1,0 +1,220 @@
+# Amigos, Inimigos, e Monstros
+
+## Tabelas de Encontro
+
+O método de tabelas de encontro de Nick LS Whelan, originalmente postado sob o título de "Estruturando Tabelas de Encontro, Alteradas e Reafirmadas" em seu blog Papers and Pencils <a href="https://www.paperspencils.com/structuring-encounter-tables-amended-restated/">(https://www.paperspencils.com/structuring-encounter-tables-amended-restated/)</a>, é utilizável para assentamentos, wilderness e calabouços, e se parece com isto:
+
+| 1d12 | Tipo                                                                                                                                               |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2    | Um dragão, ou algo igualmente intimidador.                                                                                                         |
+| 3-6  | Diversos animais selvagens, ou vários membros da Facção A deste local. Resultados mais baixos representam encontros mais perigosos.                |
+| 7    | Personagem recorrente. Crie uma tabela de NPCs estranhos, bizarros e divertidos vinculados a este local (ou universais!) e role nela.              |
+| 8-11 | Quaisquer monstros que perambulam por aqui, ou vários membros da Facção B deste local. Resultados mais altos representam encontros mais perigosos. |
+| 12   | Um mago, ou algo igualmente enigmático, misterioso e mágico.                                                                                       |
+
+## Criando PNJs
+
+Use os guias a seguir para criar PNJs, criaturas, e monstros interessantes para seu jogo de _Block, Dodge, Parry_. Não se esqueça de que o contexto, a ficção, o terreno e as rolagens de reação também adicionam muito sabor a um encontro. Os inimigos nem sempre precisam ser "rebuscados" para serem perigosos ou interessantes. Um grupo de 1d6 bandidos (4 HP, sem Armadura, FOR 10 DEX 10 VON 10 armados com espadas curtas causando d6 de dano) com sua própria agenda, motivação e peculiaridades pode proporcionar tanta diversão quanto um encontro meticulosamente planejado.
+
+### Atributos
+
+Como ponto de partida para humanos (ou humanoides), ter FOR, DEX e VON de 10 tende a funcionar muito bem. Um valor de 6 pode ser considerado "notavelmente ruim" e um valor de 15 "notavelmente bom". Isso significa que NPCs com uma habilidade na faixa de 7-14 podem ser considerados "médios" ou "sem destaque".
+
+| Habilidade | 6 ou inferior  | 7-14  | 15 ou superior |
+| ---------- | -------------- | ----- | -------------- |
+| FOR        | Frágil         | Médio | Forte          |
+| DEX        | Desajeitado    | Médio | Ágil           |
+| VON        | Indisciplinado | Médio | Resoluto       |
+
+### Proteção contra Acertos
+
+Civis normais e não treinados têm PA de 3 (ou rolam 1d6). Qualquer humano com PA na faixa de 1-6 pode ser descrito como "normal" ou "não treinado". Veteranos, soldados treinados ou monstros perigosos têm PA na faixa de 7-12 (ou 2d6). Campeões, lutadores lendários, heróis ou monstros ferozes têm PA na faixa de 13-18 (ou 3d6).
+
+### Habilidades Defensivas
+
+Determine se o NPC tem acesso a Contra-Ataque, Bloqueio, Esquiva e Parada:
+
+<ul class="custom-bullets">
+    <li><strong>Contra-Atacar</strong> funciona bem com criaturas ferozes (como tigres) e combatentes ágeis (como um assassino com 2 adagas).</li>
+    <li><strong>Esquivar e Bloquear</strong> devem ser reservados para combatentes treinados, como líderes de bandidos ou capitães da guarda.
+        <ul>
+            <li>Para escolhas interessantes, conceda a alguns NPCs apenas um dos dois; um brutamontes com escudo só sabe bloquear, e um ágil arqueiro élfico só sabe esquivar.</li>
+        </ul>
+    </li>
+    <li><strong>Aparar</strong> exige bastante habilidade e funciona melhor com duelistas e espadachins bem treinados.</li>
+</ul>
+
+## Características de NPCs
+
+As seguintes características podem ser usadas para descrever ou melhorar NPCs. Observe que as palavras em negrito são baseadas na linguagem natural; ao usar esses termos de forma consistente, eles informam os jogadores sobre que tipo de inimigos eles estão enfrentando.
+
+<div class="purple-box">
+
+Uma figura solitária entra na taberna. Seus olhos percorrem a sala; suas cicatrizes são um testemunho de muitas batalhas travadas e provavelmente vencidas. Ele parece treinado (7-12 HP no máximo) e provavelmente bastante habilidoso (sempre causa pelo menos 2 de dano) com a espada longa (d8 dano cortante) em seu cinto.
+
+</div>
+
+<div class="armor-box">
+
+<ul class="overlay-square-bullets">
+    <li><strong>Explosão.</strong> Ataques com a qualidade Explosão afetam todos os alvos na área indicada, rolando separadamente para cada personagem afetado. Explosão se refere a qualquer coisa, desde explosões até grandes golpes de ataque ou o impacto de um meteorito. Se não souber quantos alvos podem ser afetados, role o dado de dano relacionado para um resultado.</li>
+    <li><strong>Ataques de sopro.</strong> Um ataque como respirar fogo, gelo ou veneno afeta todos os personagens em uma determinada direção. Os personagens devem passar em um teste de Salvamento para evitar ou resistir. Em caso de falha, eles sofrem dano diretamente na FOR e devem passar em um Salvamento de Dano Crítico. O dano depende do poder da criatura e pode variar de 1d6 a 1d12. Esses ataques devem ser bem indicados, como um dragão passando uma rodada inalando.</li>
+    <li><strong>Carga.</strong> Quando esta criatura fecha a distância com seu alvo e ataca na mesma rodada, seu ataque se torna <strong>Aprimorado</strong>.</li>
+    <li><strong>Garras/dentes como facas/espadas/lanças.</strong> Uma maneira fácil de atribuir dano às armas naturais de uma criatura é compará-las com armas existentes: Facas causam dano d6, espadas causam dano d8 e lanças causam dano d10.</li>
+    <li><strong>Constrição.</strong> Esta criatura pode apertar ou estrangular um alvo. O alvo faz um teste de FOR para tentar evitar o agarramento. Quando pego, o alvo começa cada rodada com um teste de FOR para escapar, sofrendo 1d6 de dano em caso de falha.</li>
+    <li><strong>Voador.</strong> A criatura pode realizar ataques de voo, forçando combatentes corpo a corpo a fazer um teste de DEX para conseguir causar dano. Ao tomar dano, a criatura pode escolher entre tomar o dano ou perder sua habilidade de voar.</li>
+    <li><strong>Horda.</strong> Um membro individual desta espécie, grupo ou clã é notavelmente fraco; seus ataques são <strong>Prejudicados</strong>, e ataques contra ele são <strong>Aprimorados</strong> e podem atingir múltiplos inimigos ao mesmo tempo (Explosão).</li>
+    <li><strong>Pele impenetrável/escamas/couro.</strong> Alguns seres, como golems de cristal ou elementais da terra, podem ser tão bem armados que qualquer ataque regular é <strong>Prejudicado</strong> ou simplesmente não causa dano. Isso deve incentivar os jogadores a encontrar um ponto fraco ou adquirir um meio de penetrá-los.</li>
+    <li><strong>Infeccioso.</strong> Quando esta criatura causa Dano Crítico, a Localização do Acerto fica infectada com uma doença. Esta doença pode se espalhar e, em casos extremos, pode exigir amputação para contê-la. Algumas doenças (como o vírus zumbi) são fatais.</li>
+    <li><strong>Invisível.</strong> A menos que os oponentes descubram uma forma de rastrear a criatura, ela só pode ser atacada por adivinhar onde ela pode estar. Tais ataques, se atingirem, são <strong>Prejudicados</strong>.</li>
+    <li><strong>Sem Mente.</strong> A criatura nunca faz Salvamentos de Moral. Isso é usado para mortos-vivos e construtos.</li>
+    <li><strong>Montado.</strong> A criatura pode atacar passando pelos oponentes, forçando combatentes corpo a corpo a fazer um teste de DEX para conseguir causar dano. Ao tomar dano, a criatura pode escolher entre tomar o dano ou ser derrubada de seu montado.</li>
+    <li><strong>Táticas de matilha/esquadrão.</strong> Quando várias criaturas com esta propriedade atacam o mesmo alvo, adicione 1d12 aos rolos de dano. Por exemplo, 2 guardas do palácio atacando com lanças (d8) o mesmo alvo; role 2d8 e 1d12 para o dano, e pegue o valor mais alto.</li>
+    <li><strong>Pele/escamas/couro como couro/corrente/placa.</strong> Couro conta como armadura leve (1 Arm), corrente conta como armadura média (2 Arm), e placa conta como armadura pesada (3 Arm).</li>
+    <li><strong>Superior.</strong> Este indivíduo age como um destacamento; apenas outros destacamentos podem causar dano normal a ele, e fontes individuais de dano são <strong>Prejudicadas</strong>. Seus ataques são <strong>Aprimorados</strong> e podem afetar múltiplos alvos ao mesmo tempo (Explosão). Esta superioridade também pode ser contornada descobrindo o ponto cego, fraqueza ou falha do alvo.</li>
+    <li><strong>Aterrorizante.</strong> A criatura é tão alienígena, grotesca ou monstruosa que todos que olharem para ela pela primeira vez devem passar em um teste de VON ou terão todos os ataques <strong>Prejudicados</strong> até se reorganizarem e se recuperarem.</li>
+    <li><strong>Destrutivo.</strong> Uma boa maneira universal de tornar um inimigo mais ameaçador é fazer com que seus ataques causem ferimentos (como explicado em [Ferimentos e Como Tratá-los](regras#ferimentos-e-como-tratá-los)). Dê sabor a este ferimento de forma apropriada na ficção (lacerações, queimaduras, ossos quebrados, etc). Ao rolar para o dano, se o resultado estiver na metade superior da faixa do dado (ou seja, 4 ou mais em um d6, 5 ou mais em um d8, etc.), o ataque causa com sucesso um ferimento.</li>
+</ul>
+
+</div>
+
+### Forças & Fraquezas
+
+Considere tornar uma criatura vulnerável a certos tipos de dano (Aumentando ataques desse tipo) e resistente a outros (Impedindo ataques desse tipo). Por exemplo:
+
+<ul class="custom-bullets">
+    <li>Os esqueletos são frágeis, tornando os ataques de contusão mais eficazes contra eles, mas impedindo os ataques de corte ou perfuração.</li>
+    <li>As dríades são inflamáveis (Aumentando ataques de fogo), mas resistentes (Impedindo ataques de contusão e perfuração).</li>
+    <li>Os demônios são resistentes a qualquer dano físico, mas vulneráveis à magia.</li>
+</ul>
+
+### Exemplos
+
+Vamos juntar tudo isso. Um dragão vermelho…
+
+1. ...é certamente resistente (15 FOR), resoluto (15 VON), e feroz (13-18 PV).
+2. ...tem garras como facas (d6) e presas como espada (d8).
+3. ...pode lançar sua respiração de fogo (d10 de dano, explosão).
+4. ...tem pele como armadura de placas (3 Arm).
+5. ...é superior a qualquer combatente humano (ataca/defende como uma tropa, explosão nas garras).
+6. ...pode voar e é aterrador.
+
+... então tem a seguinte ficha
+
+<div class="npc-block-box>
+
+### Dragão Vermelho
+
+15 PA, 3 Armadura.
+
+**FOR** 15 **DEX** 10 **VON** 15.
+
+Destacamento, voador, aterrorizante.
+
+**Garras** (_2d6_), **Mordida** (_d8_), **Respiração de Fogo** (_d10, Explosão_)
+
+</div>
+
+Um guerreiro elfo de elite…
+
+1. ...é ágil e habilidoso (15 DEX), e forte de vontade (15 VON), e altamente treinado (12 PV).
+2. ...tem um arco (d8) e uma cimitarra (d8).
+3. ...está montado em um corcel nobre e é um arqueiro experiente (veja [Experiência de Combate](melhorando-seu-personagem#experiência-em-combate)).
+4. ...tem uma armadura leve, mas surpreendentemente forte (2 Arm).
+5. ...é treinado em esgrima coordenada (táticas de esquadrão com cimitarra).
+6. ...pode desviar ataques até 3 vezes por combate (sem precisar controlar o inventário).
+
+... então tem a seguinte ficha
+
+<div class="npc-block-box">
+
+### Guarda Real Elfo
+
+12 PA, 2 Armadura.
+
+**FOR** 10 **DEX** 15 **VON** 15.
+
+Montado.
+
+**_Arco_** _(d8) Experiente: não pode causar menos de 3 de dano enquanto montado._
+**_Cimitarra_** _(d8). Táticas de Esquadrão: Quando vários Guardas Reais Elfos atacam o mesmo alvo com cimitarra, adicione um d12 à rolagem de dano._
+**_Desviar_**. _Pode Impedir ataques Equilibrados ou Lentos até 3 vezes por combate._
+
+</div>
+
+## Outros Aventureiros
+
+Use o seguinte para rapidamente criar um aventureiro rival ou um possível contratador:
+
+### Atributos
+
+3d6 na linha, assim como com os PJs.
+
+### Pontos de Acerto
+
+| 1d8 | Resultado  |
+| --- | ---------- |
+| 1-5 | 1d6 PV Máx |
+| 6-7 | 2d6 PV Máx |
+| 8   | 3d6 PV Máx |
+
+### Arma
+
+| 1d8 | Arma                                               |
+| --- | -------------------------------------------------- |
+| 1   | Machado (D8 Cortante, Pesado 1)                    |
+| 2   | 2 Adagas (D6 Perfurante)                           |
+| 3   | Espadão (D10 Cortante, Varredura 6)                |
+| 4   | Arco Longo (D6 Perfurante) + Adaga (D6 Perfurante) |
+| 5   | Espada Longa (D8 Perfurante, Varredura 7)          |
+| 6   | Maça (D8 Contundente, Choque 8)                    |
+| 7   | Lança (D8 Perfurante, Alcance, Empurrão 6)         |
+| 8   | Martelo de Guerra (D10 Contundente, Choque 7)      |
+
+### Armadura
+
+| 1d20  | Armadura                        |
+| ----- | ------------------------------- |
+| 1-8   | Nenhuma                         |
+| 9-12  | Armadura Crude (1 Arm, Bulky)   |
+| 13-16 | Armadura Leve (1 Arm)           |
+| 17-18 | Armadura Média (2 Arm, Bulky)   |
+| 19    | Armadura Média Refinada (2 Arm) |
+| 20    | Armadura Pesada (3 Arm, Bulky)  |
+
+### Motivação
+
+| 1d20 | Vício                              |
+| ---- | ---------------------------------- |
+| 1-3  | Ganância, riqueza                  |
+| 4    | Orgulho, reputação                 |
+| 5    | Inveja, melhores equipamentos      |
+| 6    | Ira, derramamento de sangue        |
+| 7    | Preguiça, bebida, aposentadoria    |
+| 8    | Ódio, extermínio                   |
+| 9    | Gula, novas e deliciosas refeições |
+| 10   | Luxúria, diversão                  |
+
+### Por Que Eles Estão Aqui Agora
+
+Pule as seguintes opções ao criar um possível contratador.
+
+| d10 | Razão                                          |
+| --- | ---------------------------------------------- |
+| 1   | Encontrou um mapa                              |
+| 2   | Contratado por um patrono misterioso           |
+| 3   | Contratado para ajudar o grupo                 |
+| 4   | Em uma missão separada, mas relacionada        |
+| 5   | Contratado para frustrar ou capturar os PJ     |
+| 6   | Procurando um item raro ou tesouro             |
+| 7   | Roubar os PJ da maior parte de sua riqueza     |
+| 8   | Rivalidade com os PJ devido a um mal-entendido |
+| 9   | Vingança contra os PJ por um erro do passado   |
+| 10  | Completamente perdido                          |
+
+## Bestiários Existentes
+
+<ul class="custom-bullets">
+    <li><em>Cairn</em> tem um bestiário extenso, cobrindo a maioria dos monstros básicos. A maioria desses monstros pode ser usada como está para Block, <em>Dodge, Parry</em>. Você pode encontrar o bestiário em <a href="https://cairnrpg.com/resources/monsters/">https://cairnrpg.com/resources/monsters/</a></li>
+    <li><em>Runecairn</em> de <strong>By Odin's Beard</strong> tem um bestiário incrível, utilizável com ajustes menores. Pode ser encontrado aqui: <a href="https://byodinsbeardrpg.itch.io/runecairnbestiar">https://byodinsbeardrpg.itch.io/runecairnbestiar</a></li>
+</ul>
