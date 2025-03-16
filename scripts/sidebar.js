@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleSidebar() {
-  const sidebar = document.getElementById("nav-list");
+  const sidebar = document.getElementById("nav-table");
   const body = document.body;
   if (sidebar.style.display === "none" || sidebar.style.display === "") {
     sidebar.style.display = "block";
