@@ -1,149 +1,248 @@
 <nav class="sidebar" id="sidebar">
-  <h2>Navigation</h2>
+  <h2>
+    Block, Dodge, Parry <br />
+    Tradução PT-BR
+  </h2>
   <ul id="nav-list">
-    <li><a href="/index.html">Home</a></li>
-    <li class="dropdown">
-      <a href="/pages/introducao.html" class="nav-main">Introdução</a>
+    <li class="dropdown" id="home">
+      <a href="/index.html?page=home" class="nav-main"
+        ><span class="first-letter">&nbsp;&nbsp;&nbsp;I</span>nício</a
+      >
+      <input
+        type="checkbox"
+        id="home-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('home-subnav')"
+      />
+      <label for="home-checkbox" class="subheader-arrow">&#9660;</label>
+      <ul class="subnav" id="home-subnav"></ul>
+    </li>
+    <li class="dropdown" id="introducao">
+      <a href="/index.html?page=introducao" class="nav-main"
+        ><span class="first-letter">&nbsp;&nbsp;&nbsp;I</span>ntrodução</a
+      >
+      <input
+        type="checkbox"
+        id="introducao-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('introducao-subnav')"
+      />
+      <label for="introducao-checkbox" class="subheader-arrow">&#9660;</label>
       <ul class="subnav" id="introducao-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/criacao-de-personagens.html" class="nav-main"
-        >Criação de Personagens</a
+    <li class="dropdown" id="criacao-de-personagens">
+      <a href="/index.html?page=criacao-de-personagens" class="nav-main"
+        ><span class="first-letter">&nbsp;C</span>riação de Personagens</a
+      >
+      <input
+        type="checkbox"
+        id="criacao-de-personagens-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('criacao-de-personagens-subnav')"
+      />
+      <label for="criacao-de-personagens-checkbox" class="subheader-arrow"
+        >&#9660;</label
       >
       <ul class="subnav" id="criacao-de-personagens-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/tarefas-complexas.html" class="nav-main"
-        >Tarefas Complexas</a
+    <li class="dropdown" id="regras">
+      <a href="/index.html?page=regras" class="nav-main"
+        ><span class="first-letter">&nbsp;R</span>egras</a
+      >
+      <input
+        type="checkbox"
+        id="regras-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('regras-subnav')"
+      />
+      <label for="regras-checkbox" class="subheader-arrow">&#9660;</label>
+      <ul class="subnav" id="regras-subnav"></ul>
+    </li>
+    <li class="dropdown" id="tarefas-complexas">
+      <a href="/index.html?page=tarefas-complexas" class="nav-main"
+        ><span class="first-letter">&nbsp;T</span>arefas Complexas</a
+      >
+      <input
+        type="checkbox"
+        id="tarefas-complexas-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('tarefas-complexas-subnav')"
+      />
+      <label for="tarefas-complexas-checkbox" class="subheader-arrow"
+        >&#9660;</label
       >
       <ul class="subnav" id="tarefas-complexas-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/conflito-social.html" class="nav-main">Conflito Social</a>
+    <li class="dropdown" id="conflito-social">
+      <a href="/index.html?page=conflito-social" class="nav-main"
+        ><span class="first-letter">&nbsp;C</span>onflito Social</a
+      >
+      <input
+        type="checkbox"
+        id="conflito-social-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('conflito-social-subnav')"
+      />
+      <label for="conflito-social-checkbox" class="subheader-arrow"
+        >&#9660;</label
+      >
       <ul class="subnav" id="conflito-social-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/combate.html" class="nav-main">Combate</a>
+    <li class="dropdown" id="combate">
+      <a href="/index.html?page=combate" class="nav-main"
+        ><span class="first-letter">&nbsp;C</span>ombate</a
+      >
+      <input
+        type="checkbox"
+        id="combate-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('combate-subnav')"
+      />
+      <label for="combate-checkbox" class="subheader-arrow">&#9660;</label>
       <ul class="subnav" id="combate-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/carreiras-e-habilidades.html" class="nav-main"
-        >Carreiras &amp; Habilidades</a
+    <li class="dropdown" id="carreiras-e-habilidades">
+      <a href="/index.html?page=carreiras-e-habilidades" class="nav-main"
+        ><span class="first-letter">&nbsp;C</span>arreiras &amp; Habilidades</a
+      >
+      <input
+        type="checkbox"
+        id="carreiras-e-habilidades-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('carreiras-e-habilidades-subnav')"
+      />
+      <label for="carreiras-e-habilidades-checkbox" class="subheader-arrow"
+        >&#9660;</label
       >
       <ul class="subnav" id="carreiras-e-habilidades-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/melhorando-seu-personagem.html" class="nav-main"
-        >Melhorando Seu Personagem</a
+    <li class="dropdown" id="melhorando-seu-personagem">
+      <a href="/index.html?page=melhorando-seu-personagem" class="nav-main"
+        ><span class="first-letter">M</span>elhorando Seu Personagem</a
+      >
+      <input
+        type="checkbox"
+        id="melhorando-seu-personagem-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('melhorando-seu-personagem-subnav')"
+      />
+      <label for="melhorando-seu-personagem-checkbox" class="subheader-arrow"
+        >&#9660;</label
       >
       <ul class="subnav" id="melhorando-seu-personagem-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/armas-armaduras-e-equipamento.html" class="nav-main"
-        >Armas, Armaduras &amp; Equipamento</a
+    <li class="dropdown" id="armas-armaduras-e-equipamento">
+      <a href="/index.html?page=armas-armaduras-e-equipamento" class="nav-main"
+        ><span class="first-letter">&nbsp;A</span>rmas, Armaduras &amp;
+        Equipamento</a
+      >
+      <input
+        type="checkbox"
+        id="armas-armaduras-e-equipamento-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('armas-armaduras-e-equipamento-subnav')"
+      />
+      <label
+        for="armas-armaduras-e-equipamento-checkbox"
+        class="subheader-arrow"
+        >&#9660;</label
       >
       <ul class="subnav" id="armas-armaduras-e-equipamento-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/magia.html" class="nav-main">Magia</a>
+    <li class="dropdown" id="magia">
+      <a href="/index.html?page=magia" class="nav-main"
+        ><span class="first-letter">M</span>agia</a
+      >
+      <input
+        type="checkbox"
+        id="magia-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('magia-subnav')"
+      />
+      <label for="magia-checkbox" class="subheader-arrow">&#9660;</label>
       <ul class="subnav" id="magia-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/narrando-aventuras.html" class="nav-main"
-        >Narrando Aventuras</a
+    <li class="dropdown" id="narrando-aventuras">
+      <a href="/index.html?page=narrando-aventuras" class="nav-main"
+        ><span class="first-letter">&nbsp;N</span>arrando Aventuras</a
+      >
+      <input
+        type="checkbox"
+        id="narrando-aventuras-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('narrando-aventuras-subnav')"
+      />
+      <label for="narrando-aventuras-checkbox" class="subheader-arrow"
+        >&#9660;</label
       >
       <ul class="subnav" id="narrando-aventuras-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/amigos-inimigos-e-monstros.html" class="nav-main"
-        >Amigos, Inimigos &amp; Monstros</a
+    <li class="dropdown" id="amigos-inimigos-e-monstros">
+      <a href="/index.html?page=amigos-inimigos-e-monstros" class="nav-main"
+        ><span class="first-letter">&nbsp;A</span>migos, Inimigos &amp;
+        Monstros</a
+      >
+      <input
+        type="checkbox"
+        id="amigos-inimigos-e-monstros-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('amigos-inimigos-e-monstros-subnav')"
+      />
+      <label for="amigos-inimigos-e-monstros-checkbox" class="subheader-arrow"
+        >&#9660;</label
       >
       <ul class="subnav" id="amigos-inimigos-e-monstros-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/ferramentas-e-tabelas.html" class="nav-main"
-        >Ferramentas &amp; Tabelas</a
+    <li class="dropdown" id="ferramentas-e-tabelas">
+      <a href="/index.html?page=ferramentas-e-tabelas" class="nav-main"
+        ><span class="first-letter">&nbsp;&nbsp;F</span>erramentas &amp;
+        Tabelas</a
+      >
+      <input
+        type="checkbox"
+        id="ferramentas-e-tabelas-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('ferramentas-e-tabelas-subnav')"
+      />
+      <label for="ferramentas-e-tabelas-checkbox" class="subheader-arrow"
+        >&#9660;</label
       >
       <ul class="subnav" id="ferramentas-e-tabelas-subnav"></ul>
     </li>
-    <li class="dropdown">
-      <a href="/pages/creditos.html" class="nav-main">Agradecimentos</a>
+    <li class="dropdown" id="creditos">
+      <a href="/index.html?page=creditos" class="nav-main"
+        ><span class="first-letter">&nbsp;A</span>gradecimentos</a
+      >
+      <input
+        type="checkbox"
+        id="creditos-checkbox"
+        class="toggle-subnav"
+        onclick="toggleSubnav('creditos-subnav')"
+      />
+      <label for="creditos-checkbox" class="subheader-arrow">&#9660;</label>
       <ul class="subnav" id="creditos-subnav"></ul>
     </li>
-    <!-- Add more main pages here -->
+    <!-- Add more items as needed -->
   </ul>
+
+  <div class="sidebar-credits">
+    <span>Escrito e testado por <strong>Lars Huijbregts</strong></span
+    ><br />
+    <span>Edição por <strong>Yossi Krausz</strong></span
+    ><br />
+    <span>Ilustrações por <strong>Bertdrawsstuff</strong></span
+    ><br />
+    <span>Layout e design por <strong>Gwen Clark</strong></span
+    ><br />
+    <span>
+      <strong><em>Block, Dodge, Parry</em></strong>
+      <em>é licenciado sob CC-BY-SA 4.0</em> </span
+    ><br />
+    <span>
+      <em
+        >Primeira edição publicada em 2022, e esta versão foi publicada em
+        2025.</em
+      >
+    </span>
+  </div>
 </nav>
-<script>
-  document.addEventListener("DOMContentLoaded", async function () {
-    const pages = [
-      { file: "regras.html", subnavId: "regras-subnav" },
-      { file: "magia.html", subnavId: "magia-subnav" },
-      {
-        file: "amigos-inimigos-e-monstros.html",
-        subnavId: "amigos-inimigos-e-monstros-subnav",
-      },
-      {
-        file: "armas-armaduras-e-equipamento.html",
-        subnavId: "armas-armaduras-e-equipamento-subnav",
-      },
-      {
-        file: "carreiras-e-habilidades.html",
-        subnavId: "carreiras-e-habilidades-subnav",
-      },
-      { file: "combate.html", subnavId: "combate-subnav" },
-      { file: "conflito-social.html", subnavId: "conflito-social-subnav" },
-      { file: "creditos.html", subnavId: "creditos-subnav" },
-      {
-        file: "criacao-de-personagens.html",
-        subnavId: "criacao-de-personagens-subnav",
-      },
-      {
-        file: "ferramentas-e-tabelas.html",
-        subnavId: "ferramentas-e-tabelas-subnav",
-      },
-      { file: "introducao.html", subnavId: "introducao-subnav" },
-      {
-        file: "melhorando-seu-personagem.html",
-        subnavId: "melhorando-seu-personagem-subnav",
-      },
-      {
-        file: "narrando-aventuras.html",
-        subnavId: "narrando-aventuras-subnav",
-      },
-      { file: "tarefas-complexas.html", subnavId: "tarefas-complexas-subnav" },
-    ];
-
-    for (const { file, subnavId } of pages) {
-      const response = await fetch(`/pages/${file}`);
-      if (!response.ok) continue;
-
-      const text = await response.text();
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(text, "text/html");
-
-      const subnav = document.getElementById(subnavId);
-      let headerIndex = 0;
-
-      // Combine <h2> and <h1> tags (excluding the first <h1>)
-      const headers = [...doc.querySelectorAll("h1, h2")].filter(
-        (header, index) => {
-          return header.tagName !== "H1" || index !== 0;
-        }
-      );
-
-      headers.forEach((header) => {
-        const id = header.id || `header-${headerIndex++}`;
-        header.id = id; // Ensure the header has an ID
-
-        const link = document.createElement("li");
-        link.innerHTML = `<a href="/pages/${file}#${id}">${header.textContent}</a>`;
-        subnav.appendChild(link);
-      });
-    }
-  });
-
-  function toggleSubnav(subnavId) {
-    const subnav = document.getElementById(subnavId);
-    subnav.classList.toggle("expanded");
-  }
-</script>
