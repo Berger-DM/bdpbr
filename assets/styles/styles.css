@@ -71,59 +71,6 @@ p, li, th, td, tr {
     right: 0;
 }
 
-/* .title {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.title h1 {
-  text-align: center;
-  font-size: 60px;
-  align-items: center;
-  font-weight: bold;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.title h1::before,
-.title h1::after {
-  content: '';
-  width: auto;
-  height: 5px;
-  background-color: black;
-  position: absolute;
-  bottom: 40%;
-}
-
-.title h1::before {
-  left: 0;
-}
-
-.title h1::after {
-  right: 0;
-} */
-
-/* .vertical-bar {
-  width: 5px;
-  height: 25px;
-  background-color: black;
-  position: absolute;
-}
-
-.title .title-left .vertical-bar {
-  left: 0;
-  bottom: 23px;
-}
-
-.title .title-right .vertical-bar {
-  right: 0;
-  bottom: 23px;
-} */
-
 /* Page Elements */
 
 #content-placeholder a {
@@ -207,6 +154,10 @@ p, li, th, td, tr {
 .sidebar .first-letter {
   position:relative;
   display: inline-block;
+}
+
+#nav-table td:nth-child(1) {
+  text-align: right !important;
 }
 
 /* Boxes */
@@ -357,6 +308,38 @@ p, li, th, td, tr {
   background-color: #d8442c;
   padding-right: 2px;
   z-index: 1;
+}
+
+.sidebar #nav-table {
+  border-spacing: 0 2px;
+}
+
+#nav-table tr {
+  margin-bottom: 2px;
+}
+
+.first-letter-table {
+  text-align: right;
+  background-color: #d8442c;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* .first-letter-table::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 131px;
+  bottom: 0;
+  width: 20px;
+  height: 29px;
+  background-color: #d8442c;
+  z-index: -1;
+} */
+
+.red-fill {
+  background-color: #d8442c;
+  width: 30px;
 }
 
 /* Responsive Design */
@@ -692,13 +675,17 @@ p, li, th, td, tr {
 /* Sidebar */
 
 .sidebar {
-  width: 290px;
+  width: 310px;
   height: 100vh;
   background-color: #f8f9fa;
-  padding: 15px;
+  /* padding: 15px; */
   overflow: auto;
   position: fixed;
   border-right: #d8442c 2px solid;
+}
+
+#sidebar-title {
+  margin-left: 15px;
 }
 
 .sidebar-credits {
@@ -707,6 +694,7 @@ p, li, th, td, tr {
   margin-top: 50px;
   bottom: 50px;
   position: absolute;
+  margin-left: 15px;
 }
 
 /* Sidebar Specific Styles */
