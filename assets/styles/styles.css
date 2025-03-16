@@ -280,6 +280,8 @@ p, li, th, td, tr {
 .nav-main {
   color: #d8442c;
   font-family: 'Texturina', sans-serif;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #nav-list {
@@ -323,6 +325,12 @@ p, li, th, td, tr {
   background-color: #d8442c;
   font-weight: bold;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.first-letter-table a {
+  text-decoration: none;
+  color: black;
 }
 
 /* .first-letter-table::before {
@@ -340,6 +348,7 @@ p, li, th, td, tr {
 .red-fill {
   background-color: #d8442c;
   width: 30px;
+  cursor: pointer;
 }
 
 /* Responsive Design */
