@@ -309,6 +309,7 @@ p, li, th, td, tr {
     padding-top: 3vw;
     border-top: #d8442c 5px solid;
     border-bottom: #d8442c 5px solid;
+    display: none;
   }
   .first-letter::before {
     width: 15vw;
@@ -384,6 +385,10 @@ p, li, th, td, tr {
   .sidebar .menu-toggle {
     display: none;
   }
+
+  #nav-list {
+    display: block;
+  }
   /* Main Content */
 
 .main-content {
@@ -396,6 +401,13 @@ p, li, th, td, tr {
   padding-left: 10px;
   margin-left: 330px;
   max-width: 900px;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 3vw;
 }
 
 .career-bullets {

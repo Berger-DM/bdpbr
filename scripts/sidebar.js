@@ -8,7 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const navLinks = document.querySelectorAll("#nav-list a");
       navLinks.forEach((link) => {
         link.addEventListener("click", function () {
-          toggleSidebar();
+          if (window.innerWidth <= 768) {
+            // Only toggle on mobile devices
+            toggleSidebar();
+          }
         });
       });
     })
