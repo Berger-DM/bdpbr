@@ -39,7 +39,6 @@ function updateLinks() {
         .split("=")[1]
         .split("#");
       loadPage(page, fragment);
-      updateTitle(page);
       history.pushState(
         { page, fragment },
         "",

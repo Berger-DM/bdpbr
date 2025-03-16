@@ -140,6 +140,7 @@ p, li, th, td, tr {
 .custom-bullets {
   list-style-type: none;
   padding-left: 0;
+  margin-left: 1vw;
 }
 
 .diamond-bullets {
@@ -214,6 +215,7 @@ p, li, th, td, tr {
   padding: 30px;
   margin: 2vw;
   margin-left: 5vw;
+  margin-right: 5vw;
   background-color: #e0bcd4;
   --size: 20px;
   mask: 
@@ -236,8 +238,7 @@ p, li, th, td, tr {
   padding-bottom: 40px;
   padding-right: 30px;
   background-color: #cccaca;
-  margin: 2vw;
-  margin-left: 5vw;
+  margin: 2vw auto 2vw auto;
   clip-path: polygon(0 0,calc(100% - 40px) 0,calc(100% - 40px) 40px,100% 40px,100% 100%,40px 100%,40px calc(100% - 40px),0 calc(100% - 40px));
 }
 
@@ -432,23 +433,10 @@ p, li, th, td, tr {
   }
   .skill-table {
     overflow-x: auto;
-    margin-left: -2vw;
+    margin: 2vw auto 2vw auto;
     width: 98vw;
     text-align: center;
   }
-
-  /* .skill-table th:first-child {
-    background-color: #f4f4f4;
-  }
-  .skill-table th:nth-child(even) {
-    background-color: #f8ccc4;
-  }
-  .skill-table th:first-child,
-  .skill-table td:first-child {
-    position: sticky;
-    left: 0;
-    z-index: 1;
-  } */
   .magic-table td:nth-child(1) {
     width: 50px;
     text-align: center;
@@ -480,6 +468,13 @@ p, li, th, td, tr {
   }
   /* Main Content */
 
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 .main-content {
   margin-left: 270px; /* Margin to account for the sidebar width */
   padding: 20px;
@@ -489,7 +484,7 @@ p, li, th, td, tr {
 #content-placeholder {
   padding-left: 10px;
   margin-left: 330px;
-  max-width: 800px;
+  width: 100%;
 }
 
 .title-left,
@@ -551,8 +546,8 @@ p, li, th, td, tr {
 
 .purple-box {
   padding: 30px;
-  margin: 2vw;
-  margin-left: 5vw;
+  margin: 2vw auto 2vw auto;
+
   background-color: #e0bcd4;
   max-width: 700px;
   --size: 20px;
@@ -566,8 +561,7 @@ p, li, th, td, tr {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
-  margin: 2vw;
-  margin-left: 5vw;
+  margin: 2vw auto 2vw auto;
   max-width: 700px;
   background-color: #f8ccc4;
 }
@@ -577,17 +571,16 @@ p, li, th, td, tr {
   padding-bottom: 40px;
   padding-right: 30px;
   background-color: #cccaca;
-  margin: 2vw;
-  margin-left: 5vw;
+  margin: 2vw auto 2vw auto;
+
   max-width: 700px;
   clip-path: polygon(0 0,calc(100% - 40px) 0,calc(100% - 40px) 40px,100% 40px,100% 100%,40px 100%,40px calc(100% - 40px),0 calc(100% - 40px));
 }
 
 .skill-table {
   width: 600px;
-  margin-left: 5vw;
+  margin: 2vw auto 2vw auto;
   border-spacing: 0;
-  margin-bottom: 50px;
 }
 
 .skill-table tr {

@@ -65,12 +65,12 @@
   <li>
     Anote quaisquer valores duplicados. Isso indica que
     <strong>algo deu muito errado</strong>. A soma dos dados que mostram valores
-    duplicados é tratada como <strong>dano para PA, depois para VON</strong>, na
-    forma de <strong>Refluxo Arcano</strong>. Por exemplo, ao rolar 4-3-3,
-    significa tomar 6 de dano. Se o dano recebido for maior que 6, ele terá a
-    propriedade <strong>Explosão</strong>, afetando todos
-    <strong>Próximos</strong>. O Refluxo Arcano ocorre após o feitiço ter
-    surtido efeito.
+    duplicados é tratada como
+    <strong>dano para Guarda, depois para VON</strong>, na forma de
+    <strong>Refluxo Arcano</strong>. Por exemplo, ao rolar 4-3-3, significa
+    tomar 6 de dano. Se o dano recebido for maior que 6, ele terá a propriedade
+    <strong>Explosão</strong>, afetando todos <strong>Próximos</strong>. O
+    Refluxo Arcano ocorre após o feitiço ter surtido efeito.
   </li>
 </ol>
 <p>Existem 4 maneiras principais de conjurar feitiços:</p>
@@ -539,71 +539,72 @@
   dentro do cenário da aventura. Novos Milagres podem ser adquiridos através de
   devoção e ao encontrá-los durante as aventuras.
 </p>
-<!-- <div class="armor-box"> -->
 
-<ul class="overlay-square-bullets">
-  <li>
-    <strong>Abençoar</strong>. O conjurador declara os aliados que deseja
-    abençoar e rola os Dados de Fé (DF). O valor total de [soma] se torna uma
-    Poça de pontos que os abençoados podem usar a qualquer momento ao fazerem
-    Testes. A Poça dura até o final do dia. No momento em que um aliado precisar
-    fazer um Teste, ele pode usar uma quantidade de pontos da Poça para aumentar
-    temporariamente sua Habilidade (FOR, DEX, VON). A Poça deve ser utilizada
-    antes de rolar o Teste.
-  </li>
-  <li>
-    Hargar deve fazer um Teste de DEX para evitar pedras caindo. A Poça tem 5
-    pontos, pois Justus, o Clérigo, lançou Abençoar mais cedo e rolou 5 com seus
-    1 DF. A DEX de Hargar é 12 e ele já está bastante ferido, então ele utiliza
-    todos os 5 pontos da Poça. Sua DEX agora é 17 para o Teste.
-  </li>
-  <li>
-    <strong>Repreender</strong>. O conjurador mira [soma] Inimigos da Fé. Cada
-    um deve fazer um Teste de VON contra a dificuldade [dados], ou seja, deve
-    rolar abaixo ou igual ao seu VON enquanto rola acima de [dados]. Em caso de
-    falha, eles fugirão com medo.
-  </li>
-  <li>
-    <strong>Fortalecer</strong>. O conjurador mira [soma] aliados. Para a
-    próxima batalha (ou seja, até que possam restaurar HP ao recuperar o
-    fôlego), eles causam [dados] de Dano Bônus.
-  </li>
-  <li>
-    <strong>Reabastecer</strong>. O conjurador mira [dados] aliados, que
-    recuperam [soma] de HP cada, não excedendo seu HP máximo. Isso significa que
-    um rolamento de 2 DF, com resultados de 4 e 6, permite que 2 aliados
-    recuperem 10 HP cada.
-  </li>
-  <li>
-    <strong>Golpear</strong>. O conjurador carrega sua arma com propósito
-    divino, causando [soma] de Dano Bônus nos próximos [dados] ataques.
-  </li>
-  <li>
-    <strong>Proteção Divina</strong>. O conjurador seleciona [dados] alvos, que
-    agora possuem 3 de Armadura nos próximos [dados] ataques que sofrerem.
-  </li>
-  <li>
-    <strong>Purificar</strong>. O conjurador toca uma garrafinha de água ou uma
-    refeição única (ou algo equivalente em tamanho) e a purifica de qualquer
-    toxina, tornando-a segura para consumo. Com 2 DF, purifica até 4 porções de
-    uma vez. Com 3 DF, toxinas, gases ou venenos próximos são temporariamente
-    suprimidos. Com 4 DF, esse efeito de limpeza é mais duradouro.
-  </li>
-  <li>
-    <strong>Proteção Elemental</strong>. Até [dados] indivíduos são protegidos
-    de efeitos climáticos severos por [soma] horas, auxiliando na viagem e no
-    sono.
-  </li>
-  <li>
-    <strong>Surto de Resiliência</strong>. Por [dados] x 10 minutos, um único
-    alvo ganha um surto divino de poder para uma Habilidade danificada
-    selecionada. No momento da invocação, anote a pontuação atual da Habilidade
-    + [soma], não excedendo a pontuação máxima usual da Habilidade. Sempre que o
-    alvo precisar fazer um Teste, ele pode usar esse valor anotado, no lugar.
-  </li>
-</ul>
-
-<!-- </div> -->
+<div class="grey-box">
+  <ul class="overlay-square-bullets">
+    <li>
+      <strong>Abençoar</strong>. O conjurador declara os aliados que deseja
+      abençoar e rola os Dados de Fé (DF). O valor total de [soma] se torna uma
+      Poça de pontos que os abençoados podem usar a qualquer momento ao fazerem
+      Testes. A Poça dura até o final do dia. No momento em que um aliado
+      precisar fazer um Teste, ele pode usar uma quantidade de pontos da Poça
+      para aumentar temporariamente sua Habilidade (FOR, DEX, VON). A Poça deve
+      ser utilizada antes de rolar o Teste.
+    </li>
+    <li>
+      Hargar deve fazer um Teste de DEX para evitar pedras caindo. A Poça tem 5
+      pontos, pois Justus, o Clérigo, lançou Abençoar mais cedo e rolou 5 com
+      seus 1 DF. A DEX de Hargar é 12 e ele já está bastante ferido, então ele
+      utiliza todos os 5 pontos da Poça. Sua DEX agora é 17 para o Teste.
+    </li>
+    <li>
+      <strong>Repreender</strong>. O conjurador mira [soma] Inimigos da Fé. Cada
+      um deve fazer um Teste de VON contra a dificuldade [dados], ou seja, deve
+      rolar abaixo ou igual ao seu VON enquanto rola acima de [dados]. Em caso
+      de falha, eles fugirão com medo.
+    </li>
+    <li>
+      <strong>Fortalecer</strong>. O conjurador mira [soma] aliados. Para a
+      próxima batalha (ou seja, até que possam restaurar Guarda ao recuperar o
+      fôlego), eles causam [dados] de Dano Bônus.
+    </li>
+    <li>
+      <strong>Reabastecer</strong>. O conjurador mira [dados] aliados, que
+      recuperam [soma] de Guarda cada, não excedendo seu Guarda máximo. Isso
+      significa que um rolamento de 2 DF, com resultados de 4 e 6, permite que 2
+      aliados recuperem 10 Guarda cada.
+    </li>
+    <li>
+      <strong>Golpear</strong>. O conjurador carrega sua arma com propósito
+      divino, causando [soma] de Dano Bônus nos próximos [dados] ataques.
+    </li>
+    <li>
+      <strong>Proteção Divina</strong>. O conjurador seleciona [dados] alvos,
+      que agora possuem 3 de Armadura nos próximos [dados] ataques que sofrerem.
+    </li>
+    <li>
+      <strong>Purificar</strong>. O conjurador toca uma garrafinha de água ou
+      uma refeição única (ou algo equivalente em tamanho) e a purifica de
+      qualquer toxina, tornando-a segura para consumo. Com 2 DF, purifica até 4
+      porções de uma vez. Com 3 DF, toxinas, gases ou venenos próximos são
+      temporariamente suprimidos. Com 4 DF, esse efeito de limpeza é mais
+      duradouro.
+    </li>
+    <li>
+      <strong>Proteção Elemental</strong>. Até [dados] indivíduos são protegidos
+      de efeitos climáticos severos por [soma] horas, auxiliando na viagem e no
+      sono.
+    </li>
+    <li>
+      <strong>Surto de Resiliência</strong>. Por [dados] x 10 minutos, um único
+      alvo ganha um surto divino de poder para uma Habilidade danificada
+      selecionada. No momento da invocação, anote a pontuação atual da
+      Habilidade + [soma], não excedendo a pontuação máxima usual da Habilidade.
+      Sempre que o alvo precisar fazer um Teste, ele pode usar esse valor
+      anotado, no lugar.
+    </li>
+  </ul>
+</div>
 
 <h3>Oração</h3>
 <p>No final do dia, o devoto dedica uma oração curta ao seu Poder Superior.</p>
@@ -793,7 +794,7 @@
         transições melódicas.</em
       >
       Quando cantada durante um momento de descanso, todos os que a ouvirem
-      removem 1d6 de Fadiga. O cantor não recupera Fadiga e fica Privado até
+      removem 1d6 de Fadiga. O cantor não recupera Fadiga e fica Desprovido até
       encontrar descanso adequado. A complexidade da canção exige que o cantor
       realmente sinta a desgraça sobre a qual está cantando, e, portanto, não
       pode ser cantada adequadamente a menos que o cantor esteja, pelo menos, um
