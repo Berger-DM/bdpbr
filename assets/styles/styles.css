@@ -366,6 +366,7 @@ p, li, th, td, tr {
   #table-clima, #table-especialistas {
     overflow-x: auto;
     white-space: nowrap;
+    margin-left: 0;
   }
 
 }
