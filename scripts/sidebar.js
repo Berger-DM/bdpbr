@@ -29,3 +29,22 @@ function toggleSidebar() {
     body.classList.remove("no-scroll");
   }
 }
+
+function updateLinks() {
+  const navLinks = document.querySelectorAll("#nav-list a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const [page, fragment] = this.getAttribute("href")
+        .split("=")[1]
+        .split("#");
+      loadPage(page, fragment);
+      updateTitle(page);
+      history.pushState(
+        { page, fragment },
+        "",
+        `?page=${page}${fragment ? `#${fragment}` : ""}`
+      );
+    });
+  });
+}

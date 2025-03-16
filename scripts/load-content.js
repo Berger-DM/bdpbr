@@ -1,25 +1,18 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   const urlParams = new URLSearchParams(window.location.search);
-//   const page = urlParams.get("page") || "home";
-
-//   fetch(`/pages/${page}.html`)
-//     .then((response) => response.text())
-//     .then((data) => {
-//       document.getElementById("content-placeholder").innerHTML = data;
-//     })
-//     .catch((error) => console.error("Error loading content:", error));
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
   const page = urlParams.get("page") || "home";
 
-  function loadPage(page) {
+  function loadPage(page, fragment) {
     fetch(`/pages/${page}.html`)
       .then((response) => response.text())
       .then((data) => {
         document.getElementById("content-placeholder").innerHTML = data;
-        updateLinks();
+        if (fragment) {
+          const element = document.getElementById(fragment);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }
       })
       .catch((error) => console.error("Error loading content:", error));
   }
@@ -29,22 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.forEach((link) => {
       link.addEventListener("click", function (event) {
         event.preventDefault();
-        const page = this.getAttribute("href").split("=")[1];
-        loadPage(page);
+        const [page, fragment] = this.getAttribute("href")
+          .split("=")[1]
+          .split("#");
+        loadPage(page, fragment);
         updateTitle(page);
-        history.pushState({ page }, "", `?page=${page}`);
-      });
-    });
-
-    const subnavLinks = document.querySelectorAll(".subnav a");
-    subnavLinks.forEach((link) => {
-      console.log("Adding subnav link:", link);
-      link.addEventListener("click", function (event) {
-        event.preventDefault();
-        const targetId = this.getAttribute("href").substring(1);
-        document
-          .getElementById(targetId)
-          .scrollIntoView({ behavior: "smooth" });
+        history.pushState(
+          { page, fragment },
+          "",
+          `?page=${page}${fragment ? `#${fragment}` : ""}`
+        );
       });
     });
   }

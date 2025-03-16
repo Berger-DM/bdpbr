@@ -20,14 +20,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Texturina', sans-serif;
 }
 
-h2 {
-  font-size: 32px;
-}
-
-h2 .first-letter {
-  padding-right: 2px;
-}
-
 h3 {
   color: #d8442c;
   font-size: 22px;
@@ -36,6 +28,103 @@ h3 {
 p, li, th, td, tr {
   font-family: 'Alegreya', sans-serif;
 }
+
+/* Titles */
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: clamp(24px, 28px, 32px);
+  gap: 5px; /* Space between text and lines */
+  position: relative;
+  overflow: hidden;
+}
+
+.title h1 {
+  padding-bottom: 20px;
+}
+
+/* Striped images at the corners */
+.title::before,
+.title::after {
+    content: "";
+    position: absolute;
+    width: 203px;  /* Adjust the size */
+    height: 32px;  /* Adjust the size */
+    background-image: url('/assets/BDPicons.png'); /* Replace with actual image path */
+    background-size: auto 100%;
+    background-color: #d8442c;
+    margin: 5px;
+}
+
+/* Top-left stripe */
+.title::before {
+    top: 0;
+    left: 0;
+}
+
+/* Bottom-right stripe */
+.title::after {
+    bottom: 0;
+    right: 0;
+}
+
+/* .title {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 60px;
+  align-items: center;
+  font-weight: bold;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title h1::before,
+.title h1::after {
+  content: '';
+  width: auto;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  bottom: 40%;
+}
+
+.title h1::before {
+  left: 0;
+}
+
+.title h1::after {
+  right: 0;
+} */
+
+/* .vertical-bar {
+  width: 5px;
+  height: 25px;
+  background-color: black;
+  position: absolute;
+}
+
+.title .title-left .vertical-bar {
+  left: 0;
+  bottom: 23px;
+}
+
+.title .title-right .vertical-bar {
+  right: 0;
+  bottom: 23px;
+} */
+
+/* Page Elements */
 
 #content-placeholder a {
   color:#d8442c;
@@ -123,7 +212,7 @@ p, li, th, td, tr {
 
 .purple-box {
   padding: 30px;
-  margin: 20px;
+  margin: 2vw;
   margin-left: 5vw;
   background-color: #e0bcd4;
   --size: 20px;
@@ -137,7 +226,7 @@ p, li, th, td, tr {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
-  margin: 20px;
+  margin: 2vw;
   background-color: #f8ccc4;
   /* clip-path: polygon(0 0,calc(100% - 40px) 0,calc(100% - 40px) 40px,100% 40px,100% 100%,40px 100%,40px calc(100% - 40px),0 calc(100% - 40px)); */
 }
@@ -147,7 +236,7 @@ p, li, th, td, tr {
   padding-bottom: 40px;
   padding-right: 30px;
   background-color: #cccaca;
-  margin: 20px;
+  margin: 2vw;
   margin-left: 5vw;
   clip-path: polygon(0 0,calc(100% - 40px) 0,calc(100% - 40px) 40px,100% 40px,100% 100%,40px 100%,40px calc(100% - 40px),0 calc(100% - 40px));
 }
@@ -400,14 +489,59 @@ p, li, th, td, tr {
 #content-placeholder {
   padding-left: 10px;
   margin-left: 330px;
-  max-width: 900px;
+  max-width: 800px;
 }
+
+.title-left,
+.title-right {
+  flex-grow: 1; /* Makes the lines expand dynamically */
+  height: 5px;
+  background-color: black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 0px;
+}
+
+/* Vertical bars */
+.vertical-bar {
+  width: 5px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+}
+
+.title-left .vertical-bar {
+  left: 0;
+  bottom: -8px;
+}
+
+.title-right .vertical-bar {
+  right: 0;
+  bottom: -8px;
+}
+
 
 #back-to-top {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  width: 3vw;
+  width: 5.5vw;
+  border-radius: 1vh;
+  background-color: #f8ccc4;
+}
+
+#back-to-top:hover {
+  background-color: #e0bcd4;
+  cursor: pointer;
+}
+
+#back-to-top h3 {
+  color: #d8442c;
+  text-decoration: none;
+  max-width: 53px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .career-bullets {
@@ -417,7 +551,7 @@ p, li, th, td, tr {
 
 .purple-box {
   padding: 30px;
-  margin: 20px;
+  margin: 2vw;
   margin-left: 5vw;
   background-color: #e0bcd4;
   max-width: 700px;
@@ -432,10 +566,10 @@ p, li, th, td, tr {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
-  margin: 20px;
+  margin: 2vw;
+  margin-left: 5vw;
   max-width: 700px;
   background-color: #f8ccc4;
-  /* clip-path: polygon(0 0,calc(100% - 40px) 0,calc(100% - 40px) 40px,100% 40px,100% 100%,40px 100%,40px calc(100% - 40px),0 calc(100% - 40px)); */
 }
 
 .grey-box {
@@ -443,7 +577,7 @@ p, li, th, td, tr {
   padding-bottom: 40px;
   padding-right: 30px;
   background-color: #cccaca;
-  margin: 20px;
+  margin: 2vw;
   margin-left: 5vw;
   max-width: 700px;
   clip-path: polygon(0 0,calc(100% - 40px) 0,calc(100% - 40px) 40px,100% 40px,100% 100%,40px 100%,40px calc(100% - 40px),0 calc(100% - 40px));
