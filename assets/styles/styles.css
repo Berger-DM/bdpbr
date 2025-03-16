@@ -277,7 +277,7 @@ p, li, th, td, tr {
 
 /* Expandable Effect */
 
-.nav-main {
+.nav-main a {
   color: #d8442c;
   font-family: 'Texturina', sans-serif;
   text-decoration: underline;
