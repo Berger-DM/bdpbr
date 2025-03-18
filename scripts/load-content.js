@@ -1,27 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const urlParams = new URLSearchParams(window.location.search);
-  const page = urlParams.get("page") || "home";
+function loadPage(hash) {
+  let [page, subheader] = hash.split("#");
+  console.log('Page: ', page, subheader); // Extract page and subheader
+  page = page || "home"; // Default page
 
-  function loadPage(page, fragment) {
-    fetch(`/pages/${page}.html`)
-      .then((response) => response.text())
-      .then((data) => {
-        document.getElementById("content-placeholder").innerHTML = data;
-        if (fragment) {
-          const element = document.getElementById(fragment);
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
+  fetch(`/pages/${page}.html`)
+      .then(response => response.text())
+      .then(html => {
+          document.getElementById("content-placeholder").innerHTML = html;
+
+          // Scroll to the subheader AFTER content loads
+          if (subheader) {
+              setTimeout(() => {
+                  const target = document.getElementById(subheader);
+                  if (target) target.scrollIntoView({ behavior: "smooth" });
+              }, 100); // Small delay to ensure rendering
           }
-        }
-      })
-      .catch((error) => console.error("Error loading content:", error));
-  }
+      });
+}
 
-  window.addEventListener("popstate", function (event) {
-    if (event.state && event.state.page) {
-      loadPage(event.state.page);
-    }
-  });
+// Load default or hashed page on startup
+document.addEventListener("DOMContentLoaded", () => loadPage(window.location.hash.substring(1)));
 
-  loadPage(page);
-});
+// Update content when the hash changes
+window.addEventListener("hashchange", () => loadPage(window.location.hash.substring(1)));

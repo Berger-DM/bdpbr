@@ -8,8 +8,8 @@ body {
   margin: 0;
   padding: 0;
   padding-right: 20px;
-  display: flex; /* Ensure the body content is in a row */
-  flex-direction: row; /* Ensure the body content is in a row */
+  /* display: flex; 
+  flex-direction: row;  */
 }
 
 body.no-scroll {
@@ -18,6 +18,10 @@ body.no-scroll {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Texturina', sans-serif;
+}
+
+h2 {
+  padding-left: 10px;
 }
 
 h3 {
@@ -299,10 +303,10 @@ p, li, th, td, tr {
 .first-letter::before {
   content: '';
   position: absolute;
-  left: -20px;
+  left: -30px;
   top: 0;
   bottom: 0;
-  width: 20px;
+  width: 30px;
   background-color: #d8442c;
   z-index: -1;
 }
@@ -346,6 +350,7 @@ p, li, th, td, tr {
 
 @media (max-width: 768px) {
   body {
+    display: flex;
       flex-direction: column;
       padding-right: 0;
   }
@@ -434,6 +439,12 @@ p, li, th, td, tr {
 
 /* Styles for desktop */
 @media (min-width: 769px) {
+  body {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    height: 100vh;
+  }
+
   .sidebar {
     transform: translateX(0);
   }
@@ -444,10 +455,6 @@ p, li, th, td, tr {
 
   .sidebar .menu-toggle {
     display: none;
-  }
-
-  #nav-list {
-    display: block;
   }
   /* Main Content */
 
@@ -464,9 +471,13 @@ p, li, th, td, tr {
   flex-grow: 1; /* Take up remaining space */
 }
 
+#nav-placeholder {
+  overflow-y: hidden;
+}
+
 #content-placeholder {
-  padding-left: 10px;
-  margin-left: 330px;
+  /* padding-left: 10px; */
+  /* margin-left: 330px; */
   width: 100%;
 }
 
@@ -696,8 +707,8 @@ p, li, th, td, tr {
   font-family: 'Alegreya', sans-serif;
   font-size: 16px;
   margin-top: 50px;
-  bottom: 50px;
-  position: absolute;
+  /* bottom: 50px;
+  position: absolute; */
   margin-left: 15px;
 }
 

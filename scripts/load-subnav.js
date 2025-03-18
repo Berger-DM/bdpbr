@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         noExtFile = file.replace(".html", "");
 
         const link = document.createElement("li");
-        link.innerHTML = `<a href="index.html?page=${noExtFile}#${id}">${header.textContent}</a>`;
+        link.innerHTML = `<a href="index.html#${noExtFile}#${id}">${header.textContent}</a>`;
         subnav.appendChild(link);
         console.log(`Added link to ${id}: ${link.innerHTML}`);
       });
