@@ -12,10 +12,14 @@ function toggleSidebar() {
   const body = document.body;
   if (sidebar.style.display === "none" || sidebar.style.display === "") {
     sidebar.style.display = "block";
+    sidebar.style.height = "100vh";
+    sidebar.style.overflowY = "scroll";
     body.classList.add("no-scroll");
   } else {
     sidebar.style.display = "none";
     body.classList.remove("no-scroll");
+    sidebar.style.height = "auto";
+    sidebar.style.overflowY = "hidden";
   }
 }
 

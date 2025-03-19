@@ -70,10 +70,19 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         noExtFile = file.replace(".html", "");
 
-        const link = document.createElement("li");
-        link.innerHTML = `<a href="index.html#${noExtFile}#${id}">${header.textContent}</a>`;
-        subnav.appendChild(link);
-        console.log(`Added link to ${id}: ${link.innerHTML}`);
+        console.log("noExtFile:", noExtFile);
+        console.log("id:", id);
+        console.log("header:", header.textContent);
+        console.log("subnav:", subnav);
+
+        const sublinkWrapper = document.getElementById(`${noExtFile}-sublist`);
+        console.log("sublinkWrapper:", sublinkWrapper);
+        const sublink = document.createElement("li");
+        sublink.innerHTML = `<a href="index.html#${noExtFile}#${id}">${header.textContent}</a>`;
+        // var link = `<a href="index.html#${noExtFile}#${id}">${header.textContent}</a>`;
+        // subnav.appendChild(link);
+        sublinkWrapper.appendChild(sublink);
+        // console.log(`Added link to ${id}: ${link}`);
       });
 
       console.log(
@@ -91,22 +100,22 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 // Restore missing functions
-function toggleSubnav(subnavId) {
-  console.log("Toggling subnav:", subnavId);
-  const subnav = document.getElementById(subnavId);
-  if (subnav) {
-    subnav.classList.toggle("expanded");
-  }
-}
+// function toggleSubnav(subnavId) {
+//   console.log("Toggling subnav:", subnavId);
+//   const subnav = document.getElementById(subnavId);
+//   if (subnav) {
+//     subnav.classList.toggle("expanded");
+//   }
+// }
 
-function toggleDetails(event, subnavId) {
-  event.preventDefault();
-  const details = event.target.closest("details");
-  if (details) {
-    details.open = !details.open;
-  }
-}
+// function toggleDetails(event, subnavId) {
+//   event.preventDefault();
+//   const details = event.target.closest("details");
+//   if (details) {
+//     details.open = !details.open;
+//   }
+// }
 
-function pamonha(subnavId) {
-  toggleSubnav(subnavId);
-}
+// function pamonha(subnavId) {
+//   toggleSubnav(subnavId);
+// }
