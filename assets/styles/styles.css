@@ -481,6 +481,7 @@ p, li, th, td, tr {
 
   .sidebar {
     transform: translateX(0);
+    margin-right: 5vw;
   }
 
   .sidebar-toggle {
@@ -489,6 +490,10 @@ p, li, th, td, tr {
 
   .sidebar .menu-toggle {
     display: none;
+  }
+
+  .sidebar #nav-table .subnav td > ul {
+    margin-right: 5px;
   }
   /* Main Content */
 
