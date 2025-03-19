@@ -35,8 +35,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   ];
 
   for (const { file, subnavId } of pages) {
-    // console.log(`Loading subnav for: ${file} (${subnavId})`);
-
     try {
       const response = await fetch(`/pages/${file}`);
       if (!response.ok) {
@@ -63,59 +61,20 @@ document.addEventListener("DOMContentLoaded", async function () {
         let id = header.id;
         if (!id) {
           id = `${file.replace(".html", "")}-header-${headerIndex++}`;
-          header.id = id; // Ensure it has an ID in the parsed document
+          header.id = id;
         } else {
           id = id.replace(".html", "");
         }
 
         noExtFile = file.replace(".html", "");
 
-        // console.log("noExtFile:", noExtFile);
-        // console.log("id:", id);
-        // console.log("header:", header.textContent);
-        // console.log("subnav:", subnav);
-
         const sublinkWrapper = document.getElementById(`${noExtFile}-subnav`);
-        // console.log("sublinkWrapper:", sublinkWrapper);
         const sublink = document.createElement("li");
         sublink.innerHTML = `<a href="index.html#${noExtFile}#${id}">${header.textContent}</a>`;
-        // var link = `<a href="index.html#${noExtFile}#${id}">${header.textContent}</a>`;
-        // subnav.appendChild(link);
         sublinkWrapper.appendChild(sublink);
-        // console.log(`Added link to ${id}: ${link}`);
       });
-
-      // console.log(
-      //   `Subnav loaded: ${subnavId} (${headers.length} headers found)`
-      // );
-
-      // Hide/show the subnav arrow
-      // const subheaderArrow = subnav.previousElementSibling;
-      // subheaderArrow.style.display =
-      //   subnav.children.length === 0 ? "none" : "inline-block";
     } catch (error) {
       console.error(`Error loading subnav for ${file}:`, error);
     }
   }
 });
-
-// Restore missing functions
-// function toggleSubnav(subnavId) {
-//   console.log("Toggling subnav:", subnavId);
-//   const subnav = document.getElementById(subnavId);
-//   if (subnav) {
-//     subnav.classList.toggle("expanded");
-//   }
-// }
-
-// function toggleDetails(event, subnavId) {
-//   event.preventDefault();
-//   const details = event.target.closest("details");
-//   if (details) {
-//     details.open = !details.open;
-//   }
-// }
-
-// function pamonha(subnavId) {
-//   toggleSubnav(subnavId);
-// }
