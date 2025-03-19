@@ -321,10 +321,44 @@ p, li, th, td, tr {
 
 .sidebar #nav-table {
   border-spacing: 0 2px;
+  width: 100%;
+}
+
+.sidebar #nav-table tr {
+  display: grid;
+  grid-template-columns: 20px 30px 250px;
 }
 
 #nav-table tr {
   margin-bottom: 2px;
+}
+
+.sidebar #nav-table .subnav {
+  display: none;
+}
+
+.sidebar #nav-table .subnav td > ul {
+  list-style: none;
+}
+
+.sidebar #nav-table .subnav td > ul > li > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.sidebar #nav-table .subnav td > ul > li > a::before {
+  content: "■";
+  color: #000;
+  margin-right: 3px;
+  transition: color 0.3s ease;
+}
+
+.sidebar #nav-table .subnav td > ul > li > a:hover::before {
+  color: #d8442c;
+}
+
+.sidebar #nav-table .subnav td > ul > li > a:hover {
+  color: #d8442c;
 }
 
 .first-letter-table {
@@ -483,6 +517,15 @@ p, li, th, td, tr {
 
 .img-container img {
   max-width: 50vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-left: 350px;
+  width: 70vw;
+  border-top: #d8442c 2px solid;
+  /* margin-right: auto; */
 }
 
 .title-left,

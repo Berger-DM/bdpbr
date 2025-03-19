@@ -23,6 +23,18 @@ function toggleSidebar() {
   }
 }
 
+function toggleSubnav(event) {
+  console.log(event.target);
+  const clickedParentElement = event.target.closest(".dropdown");
+  const subnav = clickedParentElement.nextElementSibling;
+  console.log("subnav: ", subnav);
+  if (subnav.style.display === "none" || subnav.style.display === "") {
+    subnav.style.display = "block";
+  } else {
+    subnav.style.display = "none";
+  }
+}
+
 // function updateLinks() {
 //   const navLinks = document.querySelectorAll("#nav-list a");
 //   navLinks.forEach((link) => {
