@@ -72,7 +72,8 @@ p, li, th, td, tr {
     background-image: url('/assets/iconsbdp.png'); /* Replace with actual image path */
     background-size: contain;
     background-color: #d8442c;
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* Top-left stripe */
