@@ -315,6 +315,7 @@ p, li, th, td, tr {
   color: black;
   position: relative;
   background-color: #d8442c;
+  font-size: clamp(24px, 28px, 32px);
   padding-right: 2px;
   z-index: 1;
 }
