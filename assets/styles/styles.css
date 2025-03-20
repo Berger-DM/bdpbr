@@ -67,12 +67,13 @@ p, li, th, td, tr {
 .title::after {
     content: "";
     position: absolute;
-    width: 203px;  /* Adjust the size */
-    height: 32px;  /* Adjust the size */
-    background-image: url('/assets/BDPicons.png'); /* Replace with actual image path */
-    background-size: auto 100%;
+    width: 29vw;  /* Adjust the size */
+    height: 3vw;
+    background-image: url('/assets/iconsbdp.png'); /* Replace with actual image path */
+    background-size: contain;
     background-color: #d8442c;
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* Top-left stripe */
@@ -322,10 +323,44 @@ p, li, th, td, tr {
 
 .sidebar #nav-table {
   border-spacing: 0 2px;
+  width: 100%;
+}
+
+.sidebar #nav-table tr {
+  display: grid;
+  grid-template-columns: 20px 30px 250px;
 }
 
 #nav-table tr {
   margin-bottom: 2px;
+}
+
+.sidebar #nav-table .subnav {
+  display: none;
+}
+
+.sidebar #nav-table .subnav td > ul {
+  list-style: none;
+}
+
+.sidebar #nav-table .subnav td > ul > li > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.sidebar #nav-table .subnav td > ul > li > a::before {
+  content: "■";
+  color: #000;
+  margin-right: 3px;
+  transition: color 0.3s ease;
+}
+
+.sidebar #nav-table .subnav td > ul > li > a:hover::before {
+  color: #d8442c;
+}
+
+.sidebar #nav-table .subnav td > ul > li > a:hover {
+  color: #d8442c;
 }
 
 .first-letter-table {
@@ -357,6 +392,7 @@ p, li, th, td, tr {
   }
   h1 {
     text-align: center;
+    font-size: 12vw;
   }
   .image-container {
     max-width: 98vw;
@@ -407,6 +443,12 @@ p, li, th, td, tr {
     justify-content: center;
   }
 
+  .title::before,
+  .title::after {
+    width: 90vw;
+    height: 10vw;
+  }
+
   main h3 {
     text-align: center;
   }
@@ -448,6 +490,7 @@ p, li, th, td, tr {
 
   .sidebar {
     transform: translateX(0);
+    margin-right: 5vw;
   }
 
   .sidebar-toggle {
@@ -456,6 +499,10 @@ p, li, th, td, tr {
 
   .sidebar .menu-toggle {
     display: none;
+  }
+
+  .sidebar #nav-table .subnav td > ul {
+    margin-right: 5px;
   }
   /* Main Content */
 
@@ -484,6 +531,15 @@ p, li, th, td, tr {
 
 .img-container img {
   max-width: 50vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-left: 350px;
+  width: 70vw;
+  border-top: #d8442c 2px solid;
+  /* margin-right: auto; */
 }
 
 .title-left,

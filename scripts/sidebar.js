@@ -12,10 +12,26 @@ function toggleSidebar() {
   const body = document.body;
   if (sidebar.style.display === "none" || sidebar.style.display === "") {
     sidebar.style.display = "block";
+    sidebar.style.height = "100vh";
+    sidebar.style.overflowY = "scroll";
     body.classList.add("no-scroll");
   } else {
     sidebar.style.display = "none";
     body.classList.remove("no-scroll");
+    sidebar.style.height = "auto";
+    sidebar.style.overflowY = "hidden";
+  }
+}
+
+function toggleSubnav(event) {
+  console.log(event.target);
+  const clickedParentElement = event.target.closest(".dropdown");
+  const subnav = clickedParentElement.nextElementSibling;
+  console.log("subnav: ", subnav);
+  if (subnav.style.display === "none" || subnav.style.display === "") {
+    subnav.style.display = "block";
+  } else {
+    subnav.style.display = "none";
   }
 }
 
