@@ -4,7 +4,9 @@
   <span class="title-right"><span class="vertical-bar"></span></span>
 </div>
 
-<h2 id="antes"><span class="first-letter">A</span>ntes do Combate Começar</h2>
+<h2 id="antes" style="margin-top: 100px">
+  <span class="first-letter">A</span>ntes do Combate Começar
+</h2>
 
 <h3>Surpresa</h3>
 <p>
@@ -16,7 +18,9 @@
   combatentes surpreendidos não podem usar sua Guarda para se defender dos
   ataques.
 </p>
-<p>Certas situações ou terrenos podem alterar essas probabilidades:</p>
+<p class="break-before">
+  Certas situações ou terrenos podem alterar essas probabilidades:
+</p>
 <ul class="custom-bullets">
   <li>
     <strong>Baixa visibilidade</strong> (ex.: tempestade de areia ou névoa):
@@ -36,11 +40,11 @@
   <img src="/assets/BDPB4Combat.png" alt="B4 Combat" />
 </div>
 
-<h3>Reação</h3>
+<h3 class="break-before">Reação</h3>
 <p>
   Quando o grupo encontra NPCs cuja reação não é imediatamente óbvia, role 2d6:
 </p>
-<table>
+<table class="skill-table stats-table pad-table">
   <thead>
     <tr>
       <th>2d6</th>
@@ -75,7 +79,7 @@
   pode compartilhar comida, enquanto um monstro amável pode confundir os
   personagens com cultistas que o alimentam.
 </p>
-<p>
+<p class="break-before">
   Leve em consideração o contexto da cena e como os personagens são percebidos
   pelos outros:
 </p>
@@ -102,7 +106,7 @@
   </li>
 </ul>
 
-<h2 id="teraz">
+<h2 id="teraz" class="break-before">
   <span class="first-letter">T</span>empo &amp; Espaço: Rodadas, Alcances e
   Zonas
 </h2>
@@ -114,7 +118,12 @@
   segundos no jogo e é composta por turnos. Rodadas garantem que todos os
   participantes em combate tenham um turno.
 </p>
-<h3>Alcances</h3>
+
+<div class="img-container" id="img-combate" style="padding-top: 50px">
+  <img src="/assets/BDPCombat.png" alt="" />
+</div>
+
+<h3 class="break-before">Alcances</h3>
 <p>As distâncias são medidas da seguinte forma:</p>
 <ul class="custom-bullets">
   <li>
@@ -140,14 +149,14 @@
   </li>
 </ul>
 
-<h3>Zonas</h3>
+<h3 class="break-before">Zonas</h3>
 <p>
   O sistema de <em>Block, Dodge, Parry</em> funciona bem ao utilizar
   <strong>zonas</strong>, em vez de um combate puramente imaginado ou baseado em
   grade. O Guardião divide o campo de batalha em zonas. Elas não possuem
-  tamanhos fixos, mas são determinadas conforme faz sentido no contexto.
+  tamanhos fixos, mas são determinadas conforme faz sentido no contexto. Para
+  cada zona, considere...
 </p>
-<p>Para cada zona, considere...</p>
 <ul class="custom-bullets">
   <li>
     <strong>Número máximo de ocupantes</strong> (para criar pontos de
@@ -169,7 +178,9 @@
   </li>
 </ul>
 
-<p>Para <strong>alcances</strong> e <strong>movimento</strong>:</p>
+<p class="break-before">
+  Para <strong>alcances</strong> e <strong>movimento</strong>:
+</p>
 <ul class="custom-bullets">
   <li>
     Durante um turno, um combatente pode se mover para uma zona adjacente.
@@ -200,7 +211,7 @@
   agir primeiro" é suficiente. Estas regras adicionam mais profundidade, removem
   aleatoriedade e recompensam preparação e táticas.
 </p>
-<h3>Intenções</h3>
+<h3 class="break-before">Intenções</h3>
 <p>
   No início da <strong>rodada</strong>, cada Personagem do Jogador declara suas
   <strong>intenções</strong> para aquela rodada. O Guardião decide o que os
@@ -227,7 +238,7 @@
   </li>
 </ul>
 
-<h3>Tipo de Arma &amp; Dado de Dano</h3>
+<h3 class="break-before">Tipo de Arma &amp; Dado de Dano</h3>
 <p>
   As propriedades das armas servem como critério de desempate na iniciativa.
 </p>
@@ -257,7 +268,7 @@
   </li>
 </ul>
 
-<div class="purple-box">
+<div class="purple-box break-before">
   <h3>Exemplo</h3>
   <p>
     <em
@@ -278,14 +289,16 @@
   </p>
 </div>
 
-<h2 id="atacando"><span class="first-letter">A</span>tacando</h2>
+<h2 id="atacando" class="break-before">
+  <span class="first-letter">A</span>tacando
+</h2>
 <p>O Guardião declarará quais inimigos atacarão qual personagem.</p>
 <ol>
   <li>O atacante rola o <strong>dado de dano da arma</strong>.</li>
   <li>A <strong>Armadura</strong> do alvo é subtraída do resultado.</li>
-  <li>O dano restante é causado aos <strong>PAs</strong> do alvo.</li>
+  <li>O dano restante é causado à <strong>Guarda</strong> do alvo.</li>
   <li>
-    Se os PAs forem reduzidos a 0, o dano restante é causado à
+    Se a Guarda for reduzida a 0, o dano restante é causado à
     <strong>FOR</strong>.
   </li>
   <li>
@@ -294,10 +307,10 @@
   </li>
 </ol>
 <p>
-  Ataques que causam dano aos PAs, mas não os reduzem a 0, podem ser narrados
-  como deixando o alvo 'fora de equilíbrio', 'abalado', 'tonto', 'tropeçando',
-  etc. Somente golpes que causam dano à FOR devem ser narrados como deixando
-  impactos ou ferimentos significativos.
+  Ataques que causam dano a Guarda mas não a reduza a 0 podem ser narrados como
+  deixando o alvo 'fora de equilíbrio', 'abalado', 'tonto', 'tropeçando', etc.
+  Somente golpes que causam dano à FOR devem ser narrados como deixando impactos
+  ou ferimentos significativos.
 </p>
 
 <div class="purple-box">
@@ -311,11 +324,11 @@
 </div>
 
 <p>
-  Os PAs representam sua capacidade de se proteger de golpes; também poderiam
-  ser chamados de 'guarda' (como em <em>"O inimigo tem a guarda alta"</em>).
-  Alvos despreparados não conseguem se proteger, o que significa que o dano é
-  causado diretamente à sua FOR. Da mesma forma, um personagem com inventário
-  cheio (10 espaços) está sobrecarregado a ponto de não conseguir se defender.
+  A Guarda representam sua capacidade de se proteger de golpes (como em
+  <em>"O inimigo tem a guarda alta"</em>). Alvos despreparados não conseguem se
+  proteger, o que significa que o dano é causado diretamente à sua FOR. Da mesma
+  forma, um personagem com inventário cheio (10 espaços) está sobrecarregado a
+  ponto de não conseguir se defender.
 </p>
 <p>
   Somente role o dano quando o ataque puder efetivamente causar dano ao
@@ -372,7 +385,11 @@
   </p>
 </div>
 
-<h3>Armas Duplas</h3>
+<div class="img-container" id="img-duas" style="margin-top: 30px">
+  <img src="/assets/BDPDual.png" alt="" />
+</div>
+
+<h3 class="break-before">Atacando com Duas Armas</h3>
 <p>
   Se atacar com duas armas ao mesmo tempo, role os dados de dano de ambas as
   armas e mantenha o único maior resultado. Se as duas armas tiverem
@@ -382,7 +399,7 @@
   esperar e atacar com ambas.
 </p>
 
-<div class="purple-box">
+<div class="purple-box" style="margin-top: 30px">
   <p>
     <em
       >Marlok está atacando um orc, que está próximo. Ele empunha uma espada
@@ -410,7 +427,7 @@
   utilizados; é como se somente o maior resultado acertasse o golpe.
 </p>
 
-<div class="img-container">
+<div class="img-container break-after" id="img-outnumbered">
   <img src="/assets/BDPOutnumbered.png" alt="Outnumbered" />
 </div>
 
@@ -442,7 +459,7 @@
     <strong>Em vez da soma dos Dados Mágicos</strong>, destacamentos recebem o
     maior valor como dano. Se o feitiço incluir Explosão, tome a soma dos dados.
   </li>
-  <li>
+  <li class="break-before">
     <strong>Ataques contra indivíduos feitos por um destacamento</strong> são
     aprimorados e têm a propriedade Explosão.
   </li>
@@ -468,7 +485,7 @@
   </li>
 </ul>
 
-<h2 id="manobras-e-truques">
+<h2 id="manobras-e-truques" class="break-before">
   <span class="first-letter">M</span>anobras e Truques: Realizando Estratagemas
 </h2>
 <p>
@@ -505,6 +522,10 @@
   </p>
 </div>
 
+<div class="img-container" id="img-estratagema">
+  <img src="/assets/BDPEstratagema.png" alt="Estratagema" />
+</div>
+
 <p>
   <strong
     >Estratagemas não podem ser bloqueados, esquivados ou aparados.</strong
@@ -515,10 +536,6 @@
   iniciativa, use o tamanho da sua arma como normalmente é feito para
   iniciativa.
 </p>
-
-<div class="img-container">
-  <img src="/assets/BDPEstratagema.png" alt="Estratagema" />
-</div>
 
 <h2 id="defendendo"><span class="first-letter">D</span>efendendo</h2>
 <h3>Armadura</h3>
@@ -646,7 +663,9 @@
   </p>
 </div>
 
-<h2 id="fim-do-combate"><span class="first-letter">O</span> Fim do Combate</h2>
+<h2 id="fim-do-combate" class="break-before">
+  <span class="first-letter">O</span> Fim do Combate
+</h2>
 <h3>Moral</h3>
 <p>
   Personagens não-jogadores precisam passar em um
@@ -690,7 +709,7 @@
   machado grande.
 </p>
 
-<div class="purple-box">
+<div class="purple-box break-before">
   <p>
     <strong>Guardião</strong>:
     <em
@@ -723,11 +742,15 @@
       no começo, mas então a tampa voa para longe e cai a alguns metros de
       distância, rachando ao meio. Você tropeça, se joga para trás com seu
       machado e... uma figura esquelética e vestida se levanta do sarcófago
-      agora aberto. Uma luz fantasmagórica ilumina as órbitas vazias. Elmyra,
-      Thibaldus e Harald - vocês ouvem um barulho estranho vindo das escadas. As
-      pilhas de ossos ganharam vida, e três guerreiros esqueléticos surgem, um
-      com uma cimitarra enferrujada, outro com uma lança e outro com arco e
-      flechas.</em
+      agora aberto. Uma luz fantasmagórica ilumina as órbitas vazias.</em
+    >
+  </p>
+  <p>
+    <em>
+      Elmyra, Thibaldus e Harald - vocês ouvem um barulho estranho vindo das
+      escadas. As pilhas de ossos ganharam vida, e três guerreiros esqueléticos
+      surgem, um com uma cimitarra enferrujada, outro com uma lança e outro com
+      arco e flechas.</em
     >
   </p>
   <p><strong>Harald</strong>: <em>Ok, hora de ganhar o nosso pagamento.</em></p>
@@ -837,10 +860,14 @@
     <em
       >Isso não vai dar - você salta para frente, mas seu machado passa pelo ar
       sem atingir nada. O pontífice agora flutua a três, quatro metros de
-      altura. Harald, vamos focar em você! O esqueleto com a lança e o com a
-      cimitarra estão chegando, e você os intercepta na metade do caminho, nas
-      escadas. A lança tem alcance e será capaz de te perfurar antes que você
-      ataque...</em
+      altura.</em
+    >
+  </p>
+  <p>
+    <em>
+      Harald, vamos focar em você! O esqueleto com a lança e o com a cimitarra
+      estão chegando, e você os intercepta na metade do caminho, nas escadas. A
+      lança tem alcance e será capaz de te perfurar antes que você ataque...</em
     >
   </p>
   <p>
@@ -910,7 +937,11 @@
       recebe 1d4 – tirei 4 [FOR reduzido de 2 para 0]! Enquanto você luta com o
       esqueleto durante a queda, consegue se virar no último momento,
       aterrissando com todo o seu peso sobre o esqueleto no fundo das escadas.
-      Seus ossos se estilhaçam e se espalham; esse é um inimigo a menos! Vamos
+    </em>
+  </p>
+  <p>
+    <em
+      >Seus ossos se estilhaçam e se espalham; esse é um inimigo a menos! Vamos
       deixar você no fundo das escadas e focar em Thibaldus – o que você vai
       conjurar?</em
     >

@@ -27,7 +27,7 @@
   personagens com valores extremos:
 </p>
 
-<table class="skill-table stats-table">
+<table class="skill-table stats-table" style="padding-top: 50px">
   <thead>
     <tr>
       <th>Atributo</th>
@@ -54,100 +54,103 @@
   </tbody>
 </table>
 
-<div class="img-container">
+<div class="img-container large-image" style="padding-top: 50px">
   <img src="/assets/BDPCharGen.png" alt="CharGen" />
 </div>
 <!-- <div class="purple-section purple-box-title"> -->
 
-<h3>Regra Opcional: Sorte</h3>
-<p>
-  Sorte é um atributo opcional. Um personagem começa com 10 pontos de Sorte.
-  Sempre que normalmente se rolaria um Dado do Destino (d6) para determinar um
-  resultado ou situação, o jogador pode rolar 1d20.
-</p>
+<div class="optional">
+  <h3>Regra Opcional: Sorte</h3>
+  <p>
+    Sorte é um atributo opcional. Um personagem começa com 10 pontos de Sorte.
+    Sempre que normalmente se rolaria um Dado do Destino (d6) para determinar um
+    resultado ou situação, o jogador pode rolar 1d20.
+  </p>
 
-<ul class="custom-bullets">
-  <li>
-    Se o resultado for menor que a Sorte, a situação favorece o personagem.
-    Exemplo: há um monte de feno sob a janela por onde ele pretende pular. Isso
-    consome 1 ponto de Sorte.
-  </li>
-  <li>
-    Se o resultado for igual à Sorte, a situação é favorável e o personagem
-    ganha 1 ponto de Sorte.
-  </li>
-  <li>Se o resultado for maior que a Sorte, a situação é desfavorável.</li>
-</ul>
+  <ul class="custom-bullets">
+    <li>
+      Se o resultado for menor que a Sorte, a situação favorece o personagem.
+      Exemplo: há um monte de feno sob a janela por onde ele pretende pular.
+      Isso consome 1 ponto de Sorte.
+    </li>
+    <li>
+      Se o resultado for igual à Sorte, a situação é favorável e o personagem
+      ganha 1 ponto de Sorte.
+    </li>
+    <li>Se o resultado for maior que a Sorte, a situação é desfavorável.</li>
+  </ul>
 
-<p>
-  A Sorte também pode ser usada para melhorar Testes após a rolagem. Se um PJ
-  falha em um Teste de FOR com um resultado de 12 e precisaria de 8 ou menos,
-  ele pode gastar 4 pontos de Sorte para reduzir o resultado e ter sucesso. A
-  Sorte se esgota ao longo da aventura, tornando seu uso uma escolha
-  estratégica.
-</p>
-<h3>Regra Opcional: Idade e Experiência</h3>
-<p>
-  Os jogadores podem escolher ou rolar a idade inicial de seus personagens, o
-  que afeta suas carreiras passadas e atributos.
-</p>
-<table class="skill-table stats-table">
-  <thead>
-    <tr>
-      <th>1d6</th>
-      <th>Idade</th>
-      <th>Experiência</th>
-      <th>Efeito em FOR</th>
-      <th>Efeito em DEX</th>
-      <th>Efeito em VON</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Jovem (17+1d6 anos)</td>
-      <td>Inexperiente. 1 Habilidade de Carreira.</td>
-      <td>-1</td>
-      <td>+2</td>
-      <td>-2</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Emergente (23+1d10 anos)</td>
-      <td>Aprendendo. Menor resultado de 2d4 Habilidades de Carreira.</td>
-      <td>0</td>
-      <td>+1</td>
-      <td>-1</td>
-    </tr>
-    <tr>
-      <td>3-4</td>
-      <td>Plena (33+1d10 anos)</td>
-      <td>No auge. 1d4 Habilidades de Carreira.</td>
-      <td>+1</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Experiente (43+1d10 anos)</td>
-      <td>Experiente. Maior resultado de 2d4 Habilidades de Carreira.</td>
-      <td>0</td>
-      <td>-1</td>
-      <td>+1</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Velha (53+1d10 anos)</td>
-      <td>Veterana. 4 Habilidades de Carreira.</td>
-      <td>-1</td>
-      <td>-2</td>
-      <td>+2</td>
-    </tr>
-  </tbody>
-</table>
+  <p>
+    A Sorte também pode ser usada para melhorar Testes após a rolagem. Se um PJ
+    falha em um Teste de FOR com um resultado de 12 e precisaria de 8 ou menos,
+    ele pode gastar 4 pontos de Sorte para reduzir o resultado e ter sucesso. A
+    Sorte se esgota ao longo da aventura, tornando seu uso uma escolha
+    estratégica.
+  </p>
+  <h3 class="break-before">Regra Opcional: Idade e Experiência</h3>
+  <p>
+    Os jogadores podem escolher ou rolar a idade inicial de seus personagens, o
+    que afeta suas carreiras passadas e atributos.
+  </p>
+  <table class="skill-table stats-table">
+    <thead>
+      <tr>
+        <th>1d6</th>
+        <th>Idade</th>
+        <th>Experiência</th>
+        <th>FOR</th>
+        <th>DEX</th>
+        <th>VON</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Jovem (17+1d6 anos)</td>
+        <td>Inexperiente. 1 Habilidade de Carreira.</td>
+        <td>-1</td>
+        <td>+2</td>
+        <td>-2</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Emergente (23+1d10 anos)</td>
+        <td>Aprendendo. Menor resultado de 2d4 Habilidades de Carreira.</td>
+        <td>0</td>
+        <td>+1</td>
+        <td>-1</td>
+      </tr>
+      <tr>
+        <td>3-4</td>
+        <td>Plena (33+1d10 anos)</td>
+        <td>No auge. 1d4 Habilidades de Carreira.</td>
+        <td>+1</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Experiente (43+1d10 anos)</td>
+        <td>Experiente. Maior resultado de 2d4 Habilidades de Carreira.</td>
+        <td>0</td>
+        <td>-1</td>
+        <td>+1</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Velha (53+1d10 anos)</td>
+        <td>Veterana. 4 Habilidades de Carreira.</td>
+        <td>-1</td>
+        <td>-2</td>
+        <td>+2</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <!-- </div> -->
 
-<h2 id="pa"><span class="first-letter">P</span>roteção de Acertos</h2>
+<h2 class="break-before" id="pa"><span class="first-letter">G</span>uarda</h2>
 <p>
   Role 1d6 para determinar a Guarda inicial do PJ. Guarda refletem a capacidade
   de evitar dano em combate, não sua saúde ou resistência. Danos inevitáveis (de
@@ -187,8 +190,7 @@
 <p>
   O inventário de um personagem representa seu equipamento e sua "barra de
   estamina" por meio da Fadiga (veja
-  <a href="/index.html#regras#fadiga-e-privação">Privação &amp; Fadiga</a
-  >).
+  <a href="/index.html#regras#fadiga-e-privação">Privação &amp; Fadiga</a>).
 </p>
 <p>
   Cada personagem tem 10 espaços de inventário. Itens pequenos podem ser
@@ -218,7 +220,7 @@
 <h2 id="equipamento"><span class="first-letter">E</span>quipamento Inicial</h2>
 <p>Novos personagens começam com:</p>
 
-<ul class="overlay-square-bullets">
+<ul class="custom-bullets">
   <li>Três dias de rações (1 espaço).</li>
   <li>Um cantil (Dado de Uso d8).</li>
   <li>Uma tocha.</li>
@@ -229,7 +231,7 @@
   <li>Um boato verdadeiro e um falso sobre a região.</li>
   <li>
     Arma e armadura, escolhendo uma das opções:
-    <ul class="custom-bullets" style="margin-left: 1vw">
+    <ul class="overlay-square-bullets" style="margin-left: 1vw">
       <li>Armadura leve (1 Armadura) e 2 armas rápidas (d6).</li>
       <li>Um escudo (1 Armadura) e uma arma equilibrada (d8).</li>
       <li>Armadura média (2 Armadura, Volumosa) e uma arma lenta (d10).</li>
