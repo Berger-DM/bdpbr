@@ -10,10 +10,22 @@
         width: 407px !important;
       }
 
+      #content-placeholder {
+        border-bottom: #d8442c 5px solid;
+        width: 100%;
+      }
+
       /* Define A5 Page Setup */
       @page {
         size: A5;
-        margin: 20mm;
+      }
+
+      @page :left {
+        margin: 15mm 20mm 15mm 10mm; /* Top, Right, Bottom, Left for even pages */
+      }
+
+      @page :right {
+        margin: 15mm 10mm 15mm 20mm; /* Top, Right, Bottom, Left for odd pages */
       }
 
       /* General Print Styles */
@@ -58,8 +70,22 @@
           font-size: 10vw;
         }
 
-        p {
+        h3 {
+          font-size: large;
+          margin-bottom: 5px;
+          margin-top: 5px;
+        }
+
+        h4 {
+          font-size: medium;
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+
+        p,
+        li {
           page-break-inside: avoid; /* Prevent paragraphs from breaking awkwardly */
+          font-size: smaller;
         }
 
         a {
@@ -68,8 +94,13 @@
           font-weight: bold !important;
         }
 
+        ol,
+        ul {
+          padding-inline-start: 30px;
+        }
+
         td {
-          font-size: smaller;
+          font-size: small;
         }
 
         /* Prevent images from splitting across pages */
@@ -145,21 +176,35 @@
         }
 
         #atributos {
-          margin-top: 100px;
+          margin-top: 50px;
         }
 
         .custom-bullets {
-          padding-left: 20px;
+          padding-left: 40px;
+          list-style-type: square !important;
+        }
+
+        .custom-bullets {
+          padding-left: 40px;
+          list-style-type: square !important;
+        }
+
+        .custom-bullets.career-bullets {
+          margin-top: 0;
+        }
+
+        .custom-bullets.career-bullets li {
+          margin-left: 0;
         }
 
         .skill-table {
-          width: 380px;
+          width: 407px;
           margin-left: auto;
           margin-right: auto;
         }
 
         .skill-table td {
-          font-size: smaller;
+          font-size: small;
         }
 
         .optional h3 {
@@ -211,27 +256,51 @@
         }
 
         .purple-box {
-          margin-left: 2vw !important;
-          margin-right: 2vw !important;
+          width: 350px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         .grey-box {
           font-size: small;
         }
 
-        #injury-table::before,
+        /* #injury-table::before,
         #injury-table::after {
           content: "";
           display: block;
-          height: 10px;
+          height: 5px;
           width: 407px;
           background-color: #d8442c;
-          margin-top: 40px;
-          margin-bottom: 40px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        #injury-table::before {
+          margin-bottom: 5px;
+        }
+
+        #injury-table::after {
+          margin-top: 5px;
+        } */
+
+        #injury-table th:nth-child(1),
+        #injury-table td:nth-child(1) {
+          width: 15%;
+        }
+
+        #injury-table th:nth-child(2),
+        #injury-table td:nth-child(2) {
+          width: 35%;
+        }
+
+        #injury-table th:nth-child(3),
+        #injury-table td:nth-child(3) {
+          width: 55%;
         }
 
         #img-descanso img {
-          width: 300px;
+          width: 100px;
           height: auto;
           display: block;
           page-break-before: auto;
@@ -239,7 +308,7 @@
         }
 
         #img-outnumbered img {
-          width: 330px;
+          width: 407px;
           height: auto;
           display: block;
           page-break-before: auto;
@@ -248,6 +317,22 @@
 
         #img-dual img {
           width: 300px;
+          height: auto;
+          display: block;
+          page-break-before: auto;
+          margin-top: 30px;
+        }
+
+        #img-tarefas img {
+          width: 50px;
+          height: auto;
+          display: block;
+          page-break-before: auto;
+          margin-top: 30px;
+        }
+
+        #img-combate img {
+          width: 250px;
           height: auto;
           display: block;
           page-break-before: auto;
@@ -416,6 +501,16 @@
           /* overflow: hidden; */
         }
 
+        #img-regras img {
+          width: 275px;
+          height: auto;
+          display: block;
+          page-break-before: auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          /* overflow: hidden; */
+        }
+
         .pad-table {
           margin-top: 50px;
           margin-bottom: 50px;
@@ -437,6 +532,71 @@
         }
 
         /* TABELAS */
+
+        .skill-table.stats-table th,
+        .skill-table.stats-table td {
+          text-align: center;
+          padding: 5px; /* Reduce padding if necessary to prevent overflow */
+          word-wrap: break-word; /* Allows long words to break and wrap */
+          word-break: break-word; /* Ensures breaking long words */
+          white-space: normal; /* Ensures normal text wrapping */
+        }
+
+        .skill-table.stats-table th:nth-child(1),
+        .skill-table.stats-table td:nth-child(1) {
+          width: 23%; /* Adjusted width */
+        }
+
+        .skill-table.stats-table th:nth-child(2),
+        .skill-table.stats-table td:nth-child(2) {
+          width: 39%; /* Adjusted width */
+        }
+
+        .skill-table.stats-table th:nth-child(3),
+        .skill-table.stats-table td:nth-child(3) {
+          width: 38%; /* Adjusted width */
+        }
+
+        .skill-table.stats-table th:nth-child(4),
+        .skill-table.stats-table td:nth-child(4) {
+          width: 10%; /* Adjusted width */
+        }
+        .skill-table.stats-table th:nth-child(5),
+        .skill-table.stats-table td:nth-child(5) {
+          width: 10%; /* Adjusted width */
+        }
+        .skill-table.stats-table th:nth-child(6),
+        .skill-table.stats-table td:nth-child(6) {
+          width: 10%; /* Adjusted width */
+        }
+
+        #tabela-idade th:nth-child(1),
+        #tabela-idade td:nth-child(1) {
+          width: 10%; /* Adjusted width */
+        }
+
+        #tabela-idade th:nth-child(2),
+        #tabela-idade td:nth-child(2) {
+          width: 25%; /* Adjusted width */
+        }
+
+        #tabela-idade th:nth-child(3),
+        #tabela-idade td:nth-child(3) {
+          width: 30%; /* Adjusted width */
+        }
+
+        #tabela-idade th:nth-child(4),
+        #tabela-idade td:nth-child(4) {
+          width: 10%; /* Adjusted width */
+        }
+        #tabela-idade th:nth-child(5),
+        #tabela-idade td:nth-child(5) {
+          width: 12%; /* Adjusted width */
+        }
+        #tabela-idade th:nth-child(6),
+        #tabela-idade td:nth-child(6) {
+          width: 12%; /* Adjusted width */
+        }
 
         .skill-table.expert-table th:nth-child(1),
         .skill-table.expert-table td:nth-child(1) {
@@ -726,12 +886,12 @@
 
         #tabela-palavras-arcanas-de-poder th:nth-child(1),
         #tabela-palavras-arcanas-de-poder td:nth-child(1) {
-          width: 20%; /* Adjusted width */
+          width: 18%; /* Adjusted width */
         }
 
         #tabela-palavras-arcanas-de-poder th:nth-child(2),
         #tabela-palavras-arcanas-de-poder td:nth-child(2) {
-          width: 80%; /* Adjusted width */
+          width: 82%; /* Adjusted width */
         }
       }
     </style>

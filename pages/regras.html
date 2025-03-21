@@ -23,9 +23,7 @@
     etc.
   </li>
 </ul>
-<h2 class="break-before" id="testes">
-  <span class="first-letter">T</span>estes de Resistência
-</h2>
+<h2 id="testes"><span class="first-letter">T</span>estes de Resistência</h2>
 <p>
   Um Teste de Resistência é uma rolagem para evitar resultados ruins em
   situações de risco que fogem do controle dos jogadores. São usados em decisões
@@ -48,7 +46,7 @@
   personagens), ambos fazem um Teste de Resistência. O maior resultado
   bem-sucedido vence.
 </p>
-<h2 id="teh" class="break-before">
+<h2 id="teh">
   <span class="first-letter">T</span>empo, Equipamento e Habilidade
 </h2>
 <p>
@@ -77,7 +75,7 @@
     </li>
     <li>"Os benefícios superam as complicações?"</li>
   </ul>
-  <li>
+  <li class="break-before">
     <strong>Habilidade</strong>: O personagem tem experiência ou treinamento na
     tarefa? Seu atributo está acima de 15 (vantagem) ou abaixo de 6
     (desvantagem)?
@@ -165,11 +163,7 @@
   </p>
 </div>
 
-<div class="img-container break-after" id="img-regras">
-  <img src="/assets/BDPTEH.png" alt="TEH" />
-</div>
-
-<h2 id="dado-do-destino">
+<h2 id="dado-do-destino" class="break-before">
   <span class="first-letter">O</span> Dado do Destino
 </h2>
 <p>
@@ -211,7 +205,11 @@
   </tbody>
 </table>
 
-<div class="purple-box">
+<!-- <div class="img-container" id="img-regras">
+  <img src="/assets/BDPTEH.png" alt="TEH" />
+</div> -->
+
+<div class="purple-box" style="width: 350px">
   <p>
     <em
       >Durante um roubo que deu errado, Mae corre em direção à janela. Sem tempo
@@ -269,7 +267,7 @@
   </li>
 </ul>
 
-<p>Alguns exemplos:</p>
+<p class="break-before">Alguns exemplos:</p>
 <ul class="custom-bullets">
   <li>
     Cair de uma grande altura causa 1d10 dano de FOR por 'andar' caído (Teste
@@ -279,7 +277,7 @@
     Inalar um gás venenoso causa 1 dano de FOR por turno (não precisa de Teste
     Crítico).
   </li>
-  <li class="break-before">
+  <li>
     Ficar exposto a temperaturas frígidas sem roupa adequada causa 1 dano de FOR
     por Vigília (não precisa de Teste Crítico).
   </li>
@@ -359,7 +357,7 @@
   </p>
 </div>
 
-<h3>Teste Crítico</h3>
+<h3 class="break-before">Teste Crítico</h3>
 <p>Falhar um Teste Crítico pode resultar em:</p>
 
 <ul class="custom-bullets">
@@ -466,9 +464,7 @@
   </li>
 </ul>
 
-<h2 id="descanso" class="break-before">
-  <span class="first-letter">D</span>escanso e Recuperação
-</h2>
+<h2 id="descanso"><span class="first-letter">D</span>escanso e Recuperação</h2>
 
 <h3>Recuperar o Fôlego</h3>
 <p>
@@ -480,10 +476,6 @@
   diminui de tamanho (d8&gt;d6&gt;d4). Se rolar um 1 ou 2 com o d4, o cantil
   está vazio.
 </p>
-
-<div class="img-container" id="img-descanso">
-  <img src="/assets/BDPrest.png" alt="" />
-</div>
 
 <h3 class="break-before">Dormir</h3>
 <p>
@@ -528,19 +520,20 @@
     </tr>
   </tbody>
 </table>
-<h3 class="break-before">Alimentação e Refeições</h3>
+
+<!-- <div class="img-container" id="img-descanso">
+  <img src="/assets/BDPrest.png" alt="" />
+</div> -->
+
+<h3>Alimentação e Refeições</h3>
 <p>
   Um aventureiro deve comer pelo menos uma vez ao dia para não ficar Desprovido
   (de alimento). Todas as refeições listadas abaixo previnem a Privação. Além
   disso, refeições de alta qualidade podem restaurar Fadiga, um benefício
   inestimável em masmorras.
 </p>
-<!-- - ■ **Refeições desesperadas** são consumidas apenas em extrema necessidade, como carne crua, peixe cru, cobras, rãs arborícolas, ratos, etc. Teste de VON para não vomitar.
-- ■ **Refeições frescas** consistem em frutas e vegetais forrageados que não foram preparados.
-- ■ **Refeições simples** são ingredientes que passaram por algum nível básico de preparação, como carne grelhada e vegetais assados. Restauram 1 ponto de Fadiga. Requer fogo. Rações também contam como uma refeição simples.
-- ■ **Refeições elaboradas** são combinações de ingredientes preparados, como vegetais cozidos com peixe grelhado, sanduíches de carne de javali, etc. Restauram toda a Fadiga. Requer fogo e uma panela. -->
 
-<ul class="custom-bullets">
+<ul class="custom-bullets break-before">
   <li>
     <strong>Refeições desesperadas</strong> são consumidas apenas em extrema
     necessidade, como carne crua, peixe cru, cobras, rãs arborícolas, ratos,
@@ -567,15 +560,12 @@
   Mais informações sobre a coleta de ingredientes podem ser encontradas na seção
   Ações na Natureza.
 </p>
-<h3 class="break-before">Recuperação de Atributos Perdidos</h3>
+<h3>Recuperação de Atributos Perdidos</h3>
 <p>
   A perda de atributos pode ser recuperada com
   <a href="#descanso-e-recuperação">descanso confortável</a>, mas também pode
   ser usada como um gatilho para interpretação e exploração:
 </p>
-<!-- - ■ **Perda de FOR** representa ferimentos, cortes ou hematomas. A recuperação pode ser acelerada visitando um curandeiro, médico ou clínica, recuperando 1d4 pontos por dia.
-- ■ **Perda de DEX** representa distensões, cãibras ou dores musculares. A recuperação pode ser acelerada visitando um spa, massagista ou casa de banhos, recuperando 1d4 pontos por dia.
-- ■ **Perda de VON** representa desgaste mental, desânimo ou falta de foco. A recuperação pode ser acelerada socializando, relaxando, realizando um ritual do chá, meditando, rezando, etc., recuperando 1d4 pontos por dia. -->
 
 <ul class="custom-bullets">
   <li>
@@ -619,16 +609,12 @@
   possuem requisitos regionais, como "Pântano 1+", indicando que pelo menos um
   ingrediente deve vir de um pântano.
 </p>
-<p>Exemplos de receitas:</p>
-<!-- - ■ **Unguento Curativo (Potência 4)**: Restaura 1d3 FOR se aplicado antes de 8 horas de descanso.
-- ■ **Mistura Relaxante (Potência 4)**: Restaura 1d3 DEX se aplicada antes de 8 horas de descanso.
-- ■ **Chá de Sonho (Potência 4)**: Restaura 1d3 VON se consumido antes de 8 horas de descanso.
-- ■ **Tônico do Sono (Potência 4)**: Proporciona um sono excepcional, 'elevando' o nível do descanso (Perigoso => Normal => Confortável).
-- ■ **Unguento de Raiz Fria (Potência 3, Colinas 1+)**: Cura queimaduras leves.
-- ■ **Antídoto Herbal (Potência 3, Pântano 1+)**: Cura envenenamento leve.
-- ■ **Chá de Brilho Rubro (Potência 3, Deserto 1+)**: Cura congelamento leve.
-- ■ **Infusão de Raiz de Ferro (Potência 4, Colinas 2+)**: Dá mais firmeza às articulações, dificultando desarme e facilitando escalada por 1 dia.
-- ■ **Mastigação de Casca Amarga (Potência 4)**: Suprime a fome (conta como Refeição Simples) e auxilia na digestão. -->
+
+<div class="img-container" style="padding-top: 50px">
+  <img src="/assets/BDPwildcrafting.png" alt="" />
+</div>
+
+<p class="break-before">Exemplos de receitas:</p>
 
 <ul class="custom-bullets">
   <li>
@@ -670,7 +656,3 @@
     (conta como Refeição Simples) e auxilia na digestão.
   </li>
 </ul>
-
-<div class="img-container" style="padding-top: 50px">
-  <img src="/assets/BDPwildcrafting.png" alt="" />
-</div>

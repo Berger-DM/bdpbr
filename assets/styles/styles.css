@@ -118,12 +118,18 @@ p, li, th, td, tr {
   padding-left: 0;
 }
 
-.custom-bullets li::before {
+/* .custom-bullets li::before {
   content: '■';
   color: black;
   font-size: 14px;
   line-height: 1;
   padding-right: 5px;
+} */
+
+.diamond-bullets li {
+  position: relative;
+  padding-left: 20px;
+  /* text-indent: -20px; */
 }
 
 .diamond-bullets li::before {
@@ -132,6 +138,16 @@ p, li, th, td, tr {
   font-size: 14px;
   line-height: 1;
   padding-right: 5px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.overlay-square-bullets li {
+  position: relative;
+  padding-left: 20px;
+  /* text-indent: -20px; */
 }
 
 .overlay-square-bullets li::before {
@@ -180,7 +196,7 @@ p, li, th, td, tr {
 /* Boxes */
 
 .purple-box {
-  padding: 30px;
+  padding: 20px;
   margin: 2vw;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -203,11 +219,11 @@ p, li, th, td, tr {
 
 .grey-box {
   padding: 20px;
-  padding-bottom: 40px;
   padding-right: 30px;
+  padding-top: 5px;
   background-color: #cccaca;
   margin: 2vw auto 2vw auto;
-  clip-path: polygon(0 0,calc(100% - 40px) 0,calc(100% - 40px) 40px,100% 40px,100% 100%,40px 100%,40px calc(100% - 40px),0 calc(100% - 40px));
+  clip-path: polygon(0 0,calc(100% - 20px) 0,calc(100% - 20px) 20px,100% 20px,100% 100%,20px 100%,20px calc(100% - 20px),0 calc(100% - 20px));
 }
 
 /* Tables */
