@@ -458,12 +458,12 @@ p, li, th, td, tr {
     align-items: center;
     justify-content: center;
   }
-  .skill-table {
+  /* .skill-table {
     overflow-x: auto;
     margin: 2vw auto 2vw auto;
     width: 98vw;
     text-align: center;
-  }
+  } */
   .magic-table td:nth-child(1) {
     width: 50px;
     text-align: center;
@@ -632,11 +632,11 @@ footer {
   clip-path: polygon(0 0,calc(100% - 40px) 0,calc(100% - 40px) 40px,100% 40px,100% 100%,40px 100%,40px calc(100% - 40px),0 calc(100% - 40px));
 }
 
-.skill-table {
+/* .skill-table {
   width: 600px;
   margin: 2vw auto 2vw auto;
   border-spacing: 0;
-}
+} */
 
 .skill-table tr {
   padding-left: 20px;
@@ -650,7 +650,7 @@ footer {
   padding-right: 10px;
   font-weight: bold;
   border-right: none;
-  width: 200px;
+  /* width: 200px; */
 }
 
 .skill-table th:nth-child(1)::before {

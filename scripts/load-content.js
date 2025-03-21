@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", () =>
   loadPage(window.location.hash.substring(1))
 );
 
+// window.addEventListener("load", function () {
+//   window.print();
+// });
+
 // Update content when the hash changes
 window.addEventListener("hashchange", () =>
   loadPage(window.location.hash.substring(1))
