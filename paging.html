@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Page Numbering</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Texturina:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      canvas {
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="file" id="upload-pdf" />
+    <button id="download-pdf" disabled>Download Modified PDF</button>
+    <div id="pdf-container"></div>
+
+    <script>
+      let modifiedPages = [];
+      let pdfDoc;
+      const startPageNumber = 2; // The first page in the uploaded file will be labeled as "2"
+
+      document
+        .getElementById("upload-pdf")
+        .addEventListener("change", function (event) {
+          const file = event.target.files[0];
+          if (file) {
+            const fileReader = new FileReader();
+            fileReader.onload = function () {
+              loadPDF(fileReader.result);
+            };
+            fileReader.readAsArrayBuffer(file);
+          }
+        });
+
+      async function loadPDF(pdfData) {
+        pdfDoc = await pdfjsLib.getDocument({ data: pdfData }).promise;
+        const pdfContainer = document.getElementById("pdf-container");
+        pdfContainer.innerHTML = "";
+        modifiedPages = [];
+
+        for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+          await renderPage(pdfDoc, pageNum, pdfContainer);
+        }
+
+        document.getElementById("download-pdf").disabled = false;
+      }
+
+      async function renderPage(pdf, pageNum, container) {
+        const page = await pdf.getPage(pageNum);
+        const scale = 1;
+        const viewport = page.getViewport({ scale });
+
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = 420;
+        canvas.height = 595;
+
+        const renderContext = { canvasContext: ctx, viewport };
+        await page.render(renderContext).promise;
+
+        // Calculate the displayed page number (start at 2)
+        const displayedPageNumber = startPageNumber + pageNum - 1;
+
+        // Page number positioning
+        ctx.font = "20px 'Texturina', serif";
+        ctx.fontWeight = "bold";
+        ctx.fillStyle = "#d8442c"; // Customize as needed
+
+        if (displayedPageNumber % 2 !== 0) {
+          // Even page → Bottom-left
+          ctx.textAlign = "left";
+          ctx.fillText(`${displayedPageNumber}`, 45, canvas.height - 30);
+        } else {
+          // Odd page → Bottom-right
+          ctx.textAlign = "right";
+          ctx.fillText(
+            `${displayedPageNumber}`,
+            canvas.width - 45 - ctx.measureText(`${displayedPageNumber}`).width,
+            canvas.height - 30
+          );
+        }
+
+        container.appendChild(canvas);
+
+        // Store modified image for PDF creation
+        modifiedPages.push(canvas.toDataURL("image/png"));
+      }
+
+      document
+        .getElementById("download-pdf")
+        .addEventListener("click", function () {
+          if (modifiedPages.length === 0) return;
+
+          let pdfDefinition = {
+            pageSize: { width: 420, height: 595 }, // A5 size
+            pageMargins: [0, 0, 0, 0],
+            content: modifiedPages.map((img) => ({
+              image: img,
+              fit: [420, 595],
+              // width: 420, // Adjust as needed
+              // height: 595, // Adjust as needed
+            })),
+          };
+
+          pdfMake.createPdf(pdfDefinition).download("modified.pdf");
+        });
+    </script>
+  </body>
+</html>
