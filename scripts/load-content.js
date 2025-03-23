@@ -3,7 +3,7 @@ function loadPage(hash) {
   console.log("Page: ", page, subheader); // Extract page and subheader
   page = page || "home"; // Default page
 
-  fetch(`/pages/${page}.html`)
+  fetch(`pages/${page}.html`)
     .then((response) => response.text())
     .then((html) => {
       document.getElementById("content-placeholder").innerHTML = html;
