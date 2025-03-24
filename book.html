@@ -7,15 +7,7 @@
     <link rel="stylesheet" href="/assets/styles/styles.css" />
     <style>
       #content-placeholder {
-        width: 407px !important;
-      }
-      #content-placeholder {
-        width: 407px !important;
-      }
-
-      #content-placeholder {
-        border-bottom: #d8442c 5px solid;
-        width: 100%;
+        width: 446px !important;
       }
 
       /* Define A5 Page Setup */
@@ -25,9 +17,6 @@
         margin-bottom: 20mm;
       }
 
-      /* General Print Styles */
-      @media print {
-        /* body {
       /* General Print Styles */
       @media print {
         /* body {
@@ -41,24 +30,12 @@
           print-color-adjust: exact;
           visibility: visible !important; /* Improve color rendering */
         }
-        * {
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-          visibility: visible !important; /* Improve color rendering */
-        }
 
         header,
         footer {
           display: none;
         }
-        header,
-        footer {
-          display: none;
-        }
 
-        body {
-          background-color: white !important;
-        }
         body {
           background-color: white !important;
         }
@@ -81,11 +58,6 @@
           break-before: page !important;
           font-size: 10vw;
         }
-        h1 {
-          page-break-before: always; /* Ensure new chapters start on a new page */
-          break-before: page !important;
-          font-size: 10vw;
-        }
 
         h3 {
           font-size: large;
@@ -94,7 +66,8 @@
         }
 
         h4 {
-          font-size: medium;
+          font-size: smaller;
+          color: #d8442c;
           margin-bottom: 0;
           margin-top: 0;
         }
@@ -103,6 +76,7 @@
         li {
           page-break-inside: avoid; /* Prevent paragraphs from breaking awkwardly */
           font-size: smaller;
+          /* padding-inline: 20px; */
         }
 
         a {
@@ -161,26 +135,7 @@
           align-items: center;
           top: 0px;
         }
-        .title-left,
-        .title-right {
-          flex-grow: 1; /* Makes the lines expand dynamically */
-          height: 5px;
-          background-color: black;
-          position: relative;
-          display: inline-block;
-          align-items: center;
-          top: 0px;
-        }
 
-        .title-left::before,
-        .title-left::after,
-        .title-right::before,
-        .title-right::after {
-          content: attr(data-content);
-          display: inline-block;
-          color: inherit;
-          visibility: visible !important;
-        }
         .title-left::before,
         .title-left::after,
         .title-right::before,
@@ -210,9 +165,6 @@
         } */
 
         /* Force a new page before large images if needed */
-        .large-image {
-          page-break-after: always;
-        }
 
         .break-before {
           page-break-before: always;
@@ -231,11 +183,6 @@
           list-style-type: square !important;
         }
 
-        .custom-bullets {
-          padding-left: 40px;
-          list-style-type: square !important;
-        }
-
         .custom-bullets.career-bullets {
           margin-top: 0;
         }
@@ -245,7 +192,7 @@
         }
 
         .skill-table {
-          width: 407px;
+          width: 430px;
           margin-left: auto;
           margin-right: auto;
         }
@@ -312,25 +259,6 @@
           font-size: small;
         }
 
-        /* #injury-table::before,
-        #injury-table::after {
-          content: "";
-          display: block;
-          height: 5px;
-          width: 407px;
-          background-color: #d8442c;
-          margin-top: 10px;
-          margin-bottom: 10px;
-        }
-
-        #injury-table::before {
-          margin-bottom: 5px;
-        }
-
-        #injury-table::after {
-          margin-top: 5px;
-        } */
-
         #injury-table th:nth-child(1),
         #injury-table td:nth-child(1) {
           width: 15%;
@@ -355,7 +283,7 @@
         }
 
         #img-outnumbered img {
-          width: 407px;
+          width: 446px;
           height: auto;
           display: block;
           page-break-before: auto;
@@ -427,7 +355,7 @@
         }
 
         #img-loot img {
-          width: 407px;
+          width: 446px;
           height: auto;
           display: block;
           page-break-before: auto;
@@ -435,7 +363,7 @@
         }
 
         #img-magia img {
-          width: 407px;
+          width: 446px;
           height: auto;
           display: block;
           page-break-before: auto;
@@ -443,7 +371,7 @@
         }
 
         #img-magia-divina img {
-          width: 407px;
+          width: 446px;
           height: auto;
           display: block;
           page-break-before: auto;
@@ -451,7 +379,7 @@
         }
 
         #img-magia-lirica img {
-          width: 407px;
+          width: 446px;
           height: auto;
           display: block;
           page-break-before: auto;
@@ -479,7 +407,7 @@
         }
 
         #img-masmorra img {
-          width: 407px;
+          width: 446px;
           height: auto;
           display: block;
           page-break-before: auto;
@@ -489,7 +417,7 @@
         }
 
         #img-cidade img {
-          width: 407px;
+          width: 446px;
           height: auto;
           display: block;
           page-break-before: auto;
@@ -499,7 +427,7 @@
         }
 
         #img-carreiras img {
-          width: 407px;
+          width: 446px;
           height: auto;
           display: block;
           page-break-before: auto;
@@ -509,7 +437,7 @@
         }
 
         #img-outlook img {
-          width: 407px;
+          width: 446px;
           height: auto;
           display: block;
           page-break-before: auto;

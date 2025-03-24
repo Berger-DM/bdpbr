@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  padding-left: 10px;
+  padding-left: 40px;
 }
 
 h3 {
@@ -318,12 +318,13 @@ p, li, th, td, tr {
 .first-letter::before {
   content: '';
   position: absolute;
-  left: -30px;
+  left: -300px;
   top: 0;
   bottom: 0;
-  width: 30px;
+  width: 300px;
   background-color: #d8442c;
   z-index: -1;
+  /* margin-left: -15mm; */
 }
 
 .first-letter {
@@ -556,24 +557,24 @@ footer {
   /* margin-right: auto; */
 }
 
-.title-left,
+/* .title-left,
 .title-right {
-  flex-grow: 1; /* Makes the lines expand dynamically */
+  flex-grow: 1;
   height: 5px;
   background-color: black;
   position: relative;
   display: flex;
   align-items: center;
   top: 0px;
-}
+} */
 
 /* Vertical bars */
-.vertical-bar {
+/* .vertical-bar {
   width: 5px;
   height: 20px;
   background-color: black;
   position: absolute;
-}
+} */
 
 .title-left .vertical-bar {
   left: 0;
