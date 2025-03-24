@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" / /> <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" / />
     <title>A5 Book</title>
     <link rel="stylesheet" href="/assets/styles/styles.css" />
     <style>
+      #content-placeholder {
+        width: 407px !important;
+      }
       #content-placeholder {
         width: 407px !important;
       }
@@ -18,16 +21,13 @@
       /* Define A5 Page Setup */
       @page {
         size: A5;
+        margin: 15mm;
+        margin-bottom: 20mm;
       }
 
-      @page :left {
-        margin: 15mm 20mm 15mm 10mm; /* Top, Right, Bottom, Left for even pages */
-      }
-
-      @page :right {
-        margin: 15mm 10mm 15mm 20mm; /* Top, Right, Bottom, Left for odd pages */
-      }
-
+      /* General Print Styles */
+      @media print {
+        /* body {
       /* General Print Styles */
       @media print {
         /* body {
@@ -41,12 +41,24 @@
           print-color-adjust: exact;
           visibility: visible !important; /* Improve color rendering */
         }
+        * {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+          visibility: visible !important; /* Improve color rendering */
+        }
 
         header,
         footer {
           display: none;
         }
+        header,
+        footer {
+          display: none;
+        }
 
+        body {
+          background-color: white !important;
+        }
         body {
           background-color: white !important;
         }
@@ -64,6 +76,11 @@
           height: 38px;
         }
 
+        h1 {
+          page-break-before: always; /* Ensure new chapters start on a new page */
+          break-before: page !important;
+          font-size: 10vw;
+        }
         h1 {
           page-break-before: always; /* Ensure new chapters start on a new page */
           break-before: page !important;
@@ -114,6 +131,17 @@
           margin: auto;
           break-inside: avoid;
         }
+        /* Prevent images from splitting across pages */
+        img {
+          max-width: 100%;
+          height: auto;
+          page-break-inside: avoid;
+          page-break-before: auto;
+          page-break-after: auto;
+          display: block;
+          margin: auto;
+          break-inside: avoid;
+        }
 
         .img-container {
           display: block;
@@ -133,7 +161,26 @@
           align-items: center;
           top: 0px;
         }
+        .title-left,
+        .title-right {
+          flex-grow: 1; /* Makes the lines expand dynamically */
+          height: 5px;
+          background-color: black;
+          position: relative;
+          display: inline-block;
+          align-items: center;
+          top: 0px;
+        }
 
+        .title-left::before,
+        .title-left::after,
+        .title-right::before,
+        .title-right::after {
+          content: attr(data-content);
+          display: inline-block;
+          color: inherit;
+          visibility: visible !important;
+        }
         .title-left::before,
         .title-left::after,
         .title-right::before,
