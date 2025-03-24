@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" / /> <meta name="viewport"
-    content="width=device-width, initial-scale=1.0" / />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A5 Book</title>
     <link rel="stylesheet" href="/assets/styles/styles.css" />
     <style>
@@ -13,8 +13,21 @@
       /* Define A5 Page Setup */
       @page {
         size: A5;
-        margin: 15mm;
-        margin-bottom: 20mm;
+      }
+
+      /* Top, Right, Bottom, Left for even pages */
+      @page :left {
+        margin: 10mm 14.5mm 20mm 7.5mm;
+      }
+
+      /* Top, Right, Bottom, Left for odd pages */
+      @page :right {
+        margin: 10mm 7.5mm 20mm 14.5mm;
+      }
+
+      @page calhau {
+        margin: 0;
+        size: A5;
       }
 
       /* General Print Styles */
@@ -56,7 +69,8 @@
         h1 {
           page-break-before: always; /* Ensure new chapters start on a new page */
           break-before: page !important;
-          font-size: 10vw;
+          font-size: 40px;
+          margin-top: 40px;
         }
 
         h3 {
@@ -70,6 +84,10 @@
           color: #d8442c;
           margin-bottom: 0;
           margin-top: 0;
+        }
+
+        p {
+          text-align: justify;
         }
 
         p,
@@ -105,16 +123,21 @@
           margin: auto;
           break-inside: avoid;
         }
-        /* Prevent images from splitting across pages */
-        img {
-          max-width: 100%;
-          height: auto;
-          page-break-inside: avoid;
-          page-break-before: auto;
-          page-break-after: auto;
-          display: block;
-          margin: auto;
-          break-inside: avoid;
+
+        .calhau {
+          page: calhau;
+          position: relative;
+          width: 420px;
+          height: 595px;
+        }
+
+        .calhau img {
+          width: auto;
+          height: 595px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-fit: cover;
         }
 
         .img-container {
@@ -174,6 +197,16 @@
           page-break-after: always;
         }
 
+        #toc tr {
+          border-bottom: 1px #d8442c solid;
+        }
+
+        #toc td {
+          color: black;
+          font-weight: bold;
+          font-size: 20px;
+        }
+
         #atributos {
           margin-top: 50px;
         }
@@ -203,6 +236,12 @@
 
         .optional h3 {
           color: #680474 !important;
+        }
+
+        .optional .skill-table {
+          width: 440px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         .optional .skill-table th {
@@ -593,6 +632,31 @@
           width: 25%; /* Adjusted width */
         }
 
+        .skill-table.magic-table th:nth-child(1),
+        .skill-table.magic-table td:nth-child(1) {
+          width: 20%; /* Adjusted width */
+        }
+
+        .skill-table.magic-table th:nth-child(2),
+        .skill-table.magic-table td:nth-child(2) {
+          width: 20%; /* Adjusted width */
+        }
+
+        .skill-table.magic-table th:nth-child(3),
+        .skill-table.magic-table td:nth-child(3) {
+          width: 30%; /* Adjusted width */
+        }
+
+        .skill-table.magic-table th:nth-child(4),
+        .skill-table.magic-table td:nth-child(4) {
+          width: 15%; /* Adjusted width */
+        }
+
+        .skill-table.magic-table th:nth-child(5),
+        .skill-table.magic-table td:nth-child(5) {
+          width: 15%; /* Adjusted width */
+        }
+
         /* TABELA EVENTOS ERMOS */
 
         #tabela-eventos-ermos th:nth-child(1),
@@ -801,12 +865,12 @@
 
         #tabelas-de-encontro th:nth-child(1),
         #tabelas-de-encontro td:nth-child(1) {
-          width: 15%; /* Adjusted width */
+          width: 10%; /* Adjusted width */
         }
 
         #tabelas-de-encontro th:nth-child(2),
         #tabelas-de-encontro td:nth-child(2) {
-          width: 85%; /* Adjusted width */
+          width: 90%; /* Adjusted width */
         }
 
         #tabela-arma th:nth-child(1),
