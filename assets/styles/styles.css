@@ -557,7 +557,7 @@ footer {
   /* margin-right: auto; */
 }
 
-/* .title-left,
+.title-left,
 .title-right {
   flex-grow: 1;
   height: 5px;
@@ -566,7 +566,7 @@ footer {
   display: flex;
   align-items: center;
   top: 0px;
-} */
+}
 
 /* Vertical bars */
 /* .vertical-bar {

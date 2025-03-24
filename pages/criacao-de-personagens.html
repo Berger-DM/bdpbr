@@ -1,3 +1,4 @@
+<!-- NEEDS PAGING NUMBERS -->
 <div class="title">
   <span class="title-left"><span class="vertical-bar"></span></span>
   <h1>Criação de Personagens</h1>
@@ -27,7 +28,7 @@
   personagens com valores extremos:
 </p>
 
-<table class="skill-table stats-table" style="padding-top: 50px">
+<table class="skill-table stats-table break-before" style="margin-bottom: 10px">
   <thead>
     <tr>
       <th>Atributo</th>
@@ -54,9 +55,11 @@
   </tbody>
 </table>
 
-<div class="img-container">
-  <img src="assets/BDPCharGen.png" alt="CharGen" />
-</div>
+<img
+  src="assets/BDPCharGen.png"
+  alt="CharGen"
+  style="width: 300px; margin-bottom: 10px; margin-top: 10px; padding: 10px"
+/>
 <!-- <div class="purple-section purple-box-title"> -->
 
 <div class="optional">
@@ -87,7 +90,7 @@
     Sorte se esgota ao longo da aventura, tornando seu uso uma escolha
     estratégica.
   </p>
-  <h3>Regra Opcional: Idade e Experiência</h3>
+  <h3 class="break-before">Regra Opcional: Idade e Experiência</h3>
   <p>
     Os jogadores podem escolher ou rolar a idade inicial de seus personagens, o
     que afeta suas carreiras passadas e atributos.
@@ -156,10 +159,13 @@
   de evitar dano em combate, não sua saúde ou resistência. Danos inevitáveis (de
   fontes invisíveis ou perigos como quedas e fogo) ignoram Guarda. Descansar
   brevemente restaura Guarda perdida. (Veja
-  <a href="index.html#regras#descanso-e-recuperação">Cura</a>).
+  <a href="index.html#regras#descanso-e-recuperação">Descanso e Recuperação</a>,
+  página 23).
 </p>
 
-<h2 id="especies"><span class="first-letter">E</span>spécies Fantásticas</h2>
+<h2 id="especies" class="break-before">
+  <span class="first-letter">E</span>spécies Fantásticas
+</h2>
 <p>
   Se desejarem, os jogadores podem escolher um dos seguintes traços para
   representar uma espécie fantástica.
@@ -186,13 +192,12 @@
   </li>
 </ul>
 
-<h2 id="inventario" class="break-before">
-  <span class="first-letter">&nbsp;I</span>nventário
-</h2>
+<h2 id="inventario"><span class="first-letter">&nbsp;I</span>nventário</h2>
 <p>
   O inventário de um personagem representa seu equipamento e sua "barra de
   estamina" por meio da Fadiga (veja
-  <a href="index.html#regras#fadiga-e-privação">Privação &amp; Fadiga</a>).
+  <a href="index.html#regras#fadiga-e-privação">Privação &amp; Fadiga</a>,
+  página 19).
 </p>
 <p>
   Cada personagem tem 10 espaços de inventário. Itens pequenos podem ser
@@ -207,21 +212,21 @@
   Guarda 0, pois não pode se defender adequadamente.
 </p>
 
-<h2 id="arma"><span class="first-letter">A</span>rma Preferida</h2>
+<h2 id="arma" class="break-before">
+  <span class="first-letter">A</span>rma Preferida
+</h2>
 <p>
   Ao criar um personagem, escolha um tipo de dano (contundente, perfurante ou
   cortante) para ser proficiente. Isso concede os benefícios desse tipo de dano,
   como ataques contundentes ignorando 1 de Armadura (veja
   <a href="index.html#armas-armaduras-e-equipamento#habilidades-de-armas"
     >Habilidades de Arma</a
-  >). Além disso, escolha uma arma na qual o personagem tenha Proficiência,
-  podendo usar seus efeitos especiais (Sangramento, Brutal, Choque). O
-  personagem recebe essa arma no inventário.
+  >, página 101). Além disso, escolha uma arma na qual o personagem tenha
+  Proficiência, podendo usar seus efeitos especiais (Sangramento, Brutal,
+  Choque). O personagem recebe essa arma no inventário.
 </p>
 
-<h2 id="equipamento" class="break-before">
-  <span class="first-letter">E</span>quipamento Inicial
-</h2>
+<h2 id="equipamento"><span class="first-letter">E</span>quipamento Inicial</h2>
 <p>Novos personagens começam com:</p>
 
 <ul class="custom-bullets">
@@ -235,10 +240,15 @@
   <li>Um boato verdadeiro e um falso sobre a região.</li>
   <li>
     Arma e armadura, escolhendo uma das opções:
-    <ul class="overlay-square-bullets" style="margin-left: 1vw">
+    <ul
+      class="overlay-square-bullets"
+      style="margin-left: 1vw; gap: 10px; margin-top: 10px"
+    >
       <li>Armadura leve (1 Armadura) e 2 armas rápidas (d6).</li>
       <li>Um escudo (1 Armadura) e uma arma equilibrada (d8).</li>
       <li>Armadura média (2 Armadura, Volumosa) e uma arma lenta (d10).</li>
     </ul>
   </li>
 </ul>
+
+<!-- adicionar calhau -->
